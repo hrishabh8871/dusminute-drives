@@ -49,7 +49,7 @@ body {
 }
 
 .carousel-item img {
-    height: 800px
+    height: auto
 }
 
 .feature {
