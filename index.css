@@ -55,7 +55,7 @@ body {
 }
 
 .discount-title {
-    margin-top: 100px;
+    margin-top: 35%;
 }
 
 .footer {
@@ -64,8 +64,8 @@ body {
 }
 
 .footer div {
-    margin-left: 100px;
-    margin-top: 20px;
+    margin-left: 5%;
+    /* margin-top: 20px; */
 }
 
 html {
@@ -80,20 +80,17 @@ html {
 
 @media only screen and (max-width: 750px) {
     .carousel-caption p {
-        visibility: hidden;      
+		/* visibility: hidden;       */
+		font-size: small;
     }
     
     .carousel-caption button {
-        /* visibility: hidden;      */
-    }    
-    
-    .footer div {
-        margin-left: 0px;
-        margin-top: 0px;
+		/* visibility: hidden;      */
+		font-size: small;
     }
-    .discount-title {
+    /* .discount-title {
         margin-top: 70px;
-    }
+    } */
   }
 
 
