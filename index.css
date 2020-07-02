@@ -81,12 +81,12 @@ html {
 @media only screen and (max-width: 750px) {
     .carousel-caption p {
 		/* visibility: hidden;       */
-		font-size: small;
+		font-size: smaller;
     }
     
     .carousel-caption button {
 		/* visibility: hidden;      */
-		font-size: small;
+		font-size: smaller;
     }
     /* .discount-title {
         margin-top: 70px;
