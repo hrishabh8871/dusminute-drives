@@ -170,75 +170,35 @@
                 </div>
                 <div class="know_buttons row">
                   <div class="col-xs-12 col-sm-4 col-md-4">
-                    <button onclick="fadeinout()" class="dark-btn-lg animate bounce quote-btn">Get a quote</button>
+                    <select onclick="" class="dark-btn-lg animate bounce quote-btn w-50">
+                      <option value='null'>Select your community</option>                      
+                      <option value="AdarshPalmRetreat">Adarsh Palm Retreat</option>
+                      <option value="BrigadeCosmopolis">Brigade Cosmopolis</option>
+                      <option value="BrigadeLakefront">Brigade Lakefront</option>
+                      <option value="BrigadeMeadows">Brigade Meadows</option>
+                      <option value="BrigadeOmega">Brigade Omega</option>
+                      <option value="BrigadePanorama">Brigade Panorama</option>
+                      <option value="DivyasreeRepublicofWhitefield">Divyasree Republic of Whitefield</option>
+                      <option value="GMInfinite">GM Infinite</option>
+                      <option value="GodrejEcity">Godrej Ecity</option>
+                      <option value="PrestigeLakeside">Prestige Lakeside</option>
+                      <option value="PrestigeSunrisePark">Prestige Sunrise Park</option>
+                      <option value="ProvidentSunworth">Provident Sunworth</option>
+                      <option value="RamkyOneNorth">Ramky One North</option>
+                      <option value="SalarpuriaGreenage">Salarpuria Greenage</option>
+                      <option value="ShriramSummitt">Shriram Summitt</option>
+                      <option value="SNNRajGreenbay">SNN Raj Greenbay</option>
+                      <option value="SNNRajEtternia">SNN Raj Etternia</option>
+                      <option value="SobhaDreamAcres">Sobha Dream Acres</option>
+                      <option value="SobhaSiliconOasis">Sobha Silicon Oasis</option>
+                    </select>
                   </div>
                   <div class="col-xs-12 col-sm-4 col-md-4">
                   </div>
                   <div class="col-xs-12 col-sm-4 col-md-4">
-                  </div>
-      
+                  </div>      
                 </div>
-              </div>
-              <div class="get_quote-2" id="get_quote-2" style="display:none;margin-bottom:20px">
-                <div class="form-box love-to-hear">
-                  <div class="form-legend">
-                    <p>Please enter your details</p>
-                  </div>
-                  <form class="submitpackageform" id="submitpackageform">
-                    <div id="login_modal_login-1" class="login_modal_login-1">
-                      <div style="padding-left:0px" class="u-form-group col-md-12">
-                        <label for="package_type">Property type * :</label>
-                        <select class="package_type" value="" id="package_type" name="type">
-                          <option value="">Select property</option>
-                          <option value="Interior_Designer">Interior Designer</option>
-                          <option value="Property_Management">Property Management</option>
-                          <option value="Hospitality">Hospitality</option>
-                          <option value="Service_Apartments">Service Apartments</option>
-                          <option value="Retail">Retail</option>
-                          <option value="Others">Others</option>
-                        </select>
-                        <span class="errMsg"></span>
-                      </div>
-                      <br>
-                      <div style="padding-left:0px" class="u-form-group col-md-12">
-                        <label for="package_name">Name * :</label>
-                        <input type="text" id="package_name" name="name" placeholder="">
-                        <span class="errMsg"></span>
-                      </div>
-                      <div style="padding-left:0px" class="u-form-group col-md-12">
-                        <label for="package_email">Email * :</label>
-                        <input type="email" id="package_email" name="email" placeholder="">
-                        <span class="errMsg"></span>
-                      </div>
-                      <div style="padding-left:0px" class="u-form-group col-md-12">
-                        <label for="package_mobile">Mobile Number * :</label>
-                        <input type="text" id="package_mobile" name="mobile" placeholder="">
-                        <span class="errMsg"></span>
-                      </div>
-                      <div style="margin-top: 15px;margin-bottom: 7px;padding:0px 60px" class="u-form-group col-md-12">
-                        <button onclick="resendotp1(); return false;">NEXT</button>
-                      </div>
-                    </div>
-                  </form>
-                </div>
-              </div>
-              <div id="get_otp" style="display:none;height: 387px;margin-bottom:20px" class="get_otp">
-                <div class="form-box love-to-hear">
-                  <div style="text-align:center" class="form-legend">
-                    <p>Please enter the OTP</p>
-                  </div>
-                  <div style="margin: 60px 0px 20px 0px;" class="u-form-group col-md-12">
-                    <input type="text" id="login_otp-1" name="otp" placeholder="OTP">
-                    <span class="errMsg"></span>
-                  </div>
-                  <div style="margin: 20px 0px;text-align:center" class="col-md-12 resend-otp-box">
-                    <p><a class="green-color" href=".">Reset Form</a></p>
-                  </div>
-                  <div style="margin: 80px 0px;padding:0px 60px" class="u-form-group col-md-12">
-                    <button onclick="verifyotp1(); return false;">SUBMIT YOUR REQUEST</button>
-                  </div>
-                </div>
-              </div>
+              </div>       
             </div>
           </div>
         </div>
@@ -248,15 +208,18 @@
 
       <div class="container-fluid padding-0">
         <div class="back-blue">
-        <h4 class="heading white text-center padding-30">Book a AC Repair Service</h4>
+        <h4 class="heading white text-center padding-30">Book Mega Service Event</h4>
         <div class="gmc-white-box">
         <div class="row padding-0 col-heading-box">
         <div class="col-md-12 col-heading modal-list-items-box">
         <div class="col-md-3 text-center">
-        List
+        Name
+        <div class="col-md-3 text-center">
+          Data
         </div>
+        </div>        
         <div class="col-md-2 text-center">
-        Category
+        Description
         </div>
         <div class="col-md-2 text-center">
         Price/unit
@@ -265,7 +228,7 @@
         Select
         </div>
         <div class="col-md-1">
-        Quantity
+        Slot
         </div>
         <div class="col-md-3">
         Selected Items
@@ -457,7 +420,7 @@
 
         <footer>
           <div class="container">
-          <div class="row padding-10 footer-main-container">
+          <!-- <div class="row padding-10 footer-main-container">
           <div class="col-md-5 col-sm-6 footerleft ">
           <div class="logofooter"><img alt="Gapoon Logo" src="https://drive.google.com/uc?id=1MheKOj7TQVdzIsPzVW4aG2R2cewM4QU-" height="40px"></div>
           <p>DusMinute is a one-stop solution that caters to all your maintenance service requirements. Currently based out of bangalore it covers an array of services ranging from plumbers, electricians, carpenters, AC repair &amp; maintenance, house cleaning, pest control, appliance repair, civil work, tiling &amp; flooring work among others. Gapoon’s intelligent algorithm mapping helps you connect with the best suited service professional.
@@ -493,7 +456,7 @@
           
           
           </ul>
-          </div>
+          </div> -->
           <div class="col-md-2 col-sm-6 paddingtop-bottom gmc-ftr">
           
           
@@ -514,7 +477,7 @@
           </ul> -->
           <br>
           <div>
-          <h6 class="heading7 vis-hid">DusMinute Mega Drives</h6>
+          <!-- <h6 class="heading7 vis-hid">DusMinute Mega Drives</h6> -->
           </div>
           </div>
           </div>
