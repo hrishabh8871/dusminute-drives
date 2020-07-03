@@ -1,42 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<!-- <head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+    <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+    <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
     <link rel="stylesheet" type="text/css" href="./index.css" media="screen"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
     <title>Dusminute - Drives</title>
-    <link rel = "icon" href = "/home/user/dusminute/code/frontend/admin/public/images/favicon/apple-touch-icon.png"type = "image/x-icon"> 
+    <link rel = "icon" href = "/home/user/dusminute/code/frontend/admin/public/images/favicon/apple-touch-icon.png"type = "image/x-icon">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/oldassset/assets/css/animate.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.2.2/tiny-slider.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.2.2/min/tiny-slider.js"></script> 
          
-</head>
-<body style="margin:0; padding: 0; box-sizing: border-box;" class="bg-light">
-    <!-- Nav Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <a class="navbar-brand" href="#"><img class="img-fluid w-25" src="https://drive.google.com/uc?id=1MheKOj7TQVdzIsPzVW4aG2R2cewM4QU-"></img></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#ourFeature">Feature<span class="sr-only"></span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link" href="#booking">Booking<span class="sr-only"></span></a>
-              </li>                       
-              <li class="nav-item active">
-                <a class="nav-link" href="#footer">Contact Us<span class="sr-only"></span></a>
-              </li>
-          </ul>          
-        </div>
-      </nav>
+</head> -->
 
-      <!-- Home screen -->
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">        
+<head>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+    integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+    crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+  <script src="https://wzrd.in/standalone/formdata-polyfill"></script>
+  <script src="https://wzrd.in/standalone/promise-polyfill@latest"></script>
+  <script src="https://wzrd.in/standalone/whatwg-fetch@latest"></script>
+  <link rel="stylesheet" type="text/css" href="./index.css" media="screen" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dusminute - Drives</title>
+  <link rel="icon" href="/home/user/dusminute/code/frontend/admin/public/images/favicon/apple-touch-icon.png"
+    type="image/x-icon">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/oldassset/assets/css/animate.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.2.2/tiny-slider.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.2.2/min/tiny-slider.js"></script>
+
+
+
+
+  <!-- <title>Gapoon- One Stop Home Maintenance Services in Bangalore</title> -->
+  <meta property="og:site_name" content="Gapoon Online Consumer Services">
+  <meta property="og:url" content="https://www.gapoon.com">
+  <meta property="og:description"
+    content="Gapoon is a trusted platform for maintenance &amp; repair services in Bangalore. Get verified plumbers, electricians, home cleaning &amp; more services with warranty">
+  <meta name="description"
+    content="Gapoon is a trusted platform for maintenance &amp; repair services in Bangalore. Get verified plumbers, electricians, home cleaning &amp; more services with warranty">
+  <meta name="keywords"
+    content="handyman, Handyman services,Home maintenance,House cleaning,Repair,Cleaning services,Maintenance packages">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="fragment" content="!">
+
+  <meta name="theme-color" content="#3fb661">
+
+  <meta name="msapplication-navbutton-color" content="#3fb661">
+
+  <meta name="apple-mobile-web-app-status-bar-style" content="#3fb661">
+  <script type="text/javascript" async="" src="https://www.google.com/pagead/conversion_async.js"></script>
+  <script async="" charset="utf-8" src="//v2.zopim.com/?39VnwYVeF0RVuG6QuFuR1dtQVtV3t9iH"
+    type="text/javascript"></script>
+  <script id="nu8qc" src="https://platform.twitter.com/widgets.js"></script>
+  <script src="https://connect.facebook.net/signals/config/147074622389670?v=2.9.21&amp;r=stable" async=""></script>
+  <script src="https://connect.facebook.net/signals/config/1677966602440722?v=2.9.21&amp;r=stable" async=""></script>
+  <script async="" src="//connect.facebook.net/en_US/fbevents.js"></script>
+  <script async="" src="//www.google-analytics.com/analytics.js"></script>
+  <script src="/cdn-cgi/apps/head/hs1yXS4XC5-dKK84xFGQvpObmjE.js"></script>
+  <link rel="icon" type="image/png" href="/assets/images/favicon.png" sizes="32x32">
+  <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/assets/oldassset/assets/css/animate.min.css">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.2.2/tiny-slider.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.2.2/min/tiny-slider.js"></script>
+  <script type="application/ld+json">
+              {  "@context" : "http://schema.org", 
+                 "@type" : "Organization", 
+                 "name" : "Gapoon Online Consumer Services Pvt. Ltd", 
+                 "url" : "https://www.gapoon.com/", 
+                 "telephone" : "+91 8105826091", 
+                 "logo" : "https://www.gapoon.com/assets/images/Logo.png",
+                 "contactPoint": [
+            {
+              "@type": "ContactPoint",
+              "telephone": "+91 810-582-6091",
+              "contactType": "customer care",
+              "areaServed": [ "Bangalore" ]
+            }
+          ],
+                 "sameAs" : [ "https://www.facebook.com/GapoonServices", 
+                     "https://twitter.com/gapoonservices", 
+                     "https://plus.google.com/+Gapoon2015/about",
+                     "https://www.youtube.com/channel/UCJ_kxbxKOFO9w0I-PeJd6Ng",
+                     "https://www.linkedin.com/company/gapoon-online-consumer-services"]
+              }
+            </script>
+
+  <script>
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return; n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      }; if (!f._fbq) f._fbq = n;
+      n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = []; t = b.createElement(e); t.async = !0;
+      t.src = v; s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+    }(window,
+      document, 'script', '//connect.facebook.net/en_US/fbevents.js');
+
+    fbq('init', '1677966602440722');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="" 1"" width="" 1"" style="" display:none"" src=""
+      https://www.facebook.com/tr?id=1677966602440722&ev=PageView&noscript=1"" /></noscript>
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=AW-946770321"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'AW-946770321');
+  </script>
+
+  <style></style>
+  <style></style>
+  <script
+    src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/946770321/?random=1593756901769&amp;cv=9&amp;fst=1593756901769&amp;num=1&amp;bg=ffffff&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;eid=376635470&amp;u_h=1080&amp;u_w=1920&amp;u_ah=1053&amp;u_aw=1853&amp;u_cd=24&amp;u_his=4&amp;u_tz=330&amp;u_java=false&amp;u_nplug=0&amp;u_nmime=0&amp;gtm=2oa6o0&amp;sendb=1&amp;ig=0&amp;data=event%3Dgtag.config&amp;frm=0&amp;url=https%3A%2F%2Fwww.gapoon.com%2F&amp;tiba=Gapoon-%20One%20Stop%20Home%20Maintenance%20Services%20in%20Bangalore&amp;hn=www.google.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
+  <script type="text/javascript" src="https://v2.zopim.com/w?39VnwYVeF0RVuG6QuFuR1dtQVtV3t9iH"></script>
+  <style media="print" class="jx_ui_StyleSheet" __jx__id="___$_2" type="text/css">
+    .zopim {
+      display: none !important
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Nav Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"><img class="img-fluid w-25" src="https://drive.google.com/uc?id=1MheKOj7TQVdzIsPzVW4aG2R2cewM4QU-"></img></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <!-- <div class="collapse navbar-collapse" id="navbarSupportedContent" style="margin-right: 500px;">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#ourFeature"><img class="w-25 m-2" alt="Quick Resolution" src="./assest/phone.svg" height="45px">810-582-6091<span class="sr-only"></span></a>
+        </li>        
+      </ul>          
+    </div> -->
+  </nav>
+
+  <!-- Home screen -->
+  <!-- <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">        
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="https://drive.google.com/uc?id=1Lt1Z9PI06yEK-fzZING5LkIQ1WVSUB-T" class="d-block w-100" alt="...">
@@ -46,9 +189,40 @@
               </div>                         
           </div>          
         </div>        
+      </div> -->
+
+  <!-- <div class="hero-section">
+    <div class="container-fluid gradient-back ">
+      <div class="container-full banner-box contain-box">
+        <div class="col-md-0 col-sm-12 col-xs-12 contain-box">
+          <div class="d-flex justify-content-between mr-auto">            
+            <div class="">
+              <h1 class="bold-heading">Home maintenance was <span class="green-color">never so easy</span></h1>
+              <p>Find verified &amp; skilled professionals in Bangalore</p>
+            </div>
+            <div class="">
+              <img class="w-100" src="https://drive.google.com/uc?id=1MheKOj7TQVdzIsPzVW4aG2R2cewM4QU-" alt="discount image">
+            </div>                        
+          </div>          
+        </div>     
       </div>
-      <!-- Fetaure -->
-      <h1 id="ourFeature" class="text-center">Our Features</h1>      
+    </div>
+  </div> -->
+
+  <div class="container">
+    <div class="col-md-6 margin-top-50">
+    <h1 class="bold-heading2">DusMinute Mega Drives
+    <strong class="green-color">Service drives for your community</strong></h1>
+    <div class="col-md-12 explore-pkg-btn-box col-xs-12 text-center margin-top-20">
+    <a class="explore-pkg-btn" onclick="ScrollTo('gmc-packages')">Explore Packages</a>
+    </div>
+    </div>
+    <div class="col-md-6">
+    <img alt="GMC" src="./assest/dog.svg" width="100%">
+    </div>
+    </div>
+  <!-- Fetaure -->
+  <!-- <h1 id="ourFeature" class="text-center">Our Features</h1>      
       <div class="container">        
         <div class="row">            
             <div class="col-lg-4 col-md-4 col-sm-4 py-2">
@@ -76,22 +250,297 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
 
-    <!-- Booking -->
-    <div id="booking" class="w-100 booking">
+  <div class="container mob-container padding-0">
+    <div class="customize-tools">
+      <ul class="ul-border col-md-12 col-sm-12 submenu-toggle home-slider-nav">
+        <li class="col-md-3 ul-list col-sm-12">
+          <div class="cards">
+            <img alt="Verified professionals" id="first1" src="./assest/organization.svg" height="45px">
+            <p>One-stop maintenance <br>&amp; execution partner</p>
+          </div>
+        </li>
+        <li class="col-md-3 col-sm-12">
+          <div class="cards">
+            <img alt="Gapoon Warranty" src="./assest/accounting.svg" height="45px">
+            <p>Highly trained in-house professionals</p>
+          </div>
+        </li>
+        <li class="col-md-3 col-sm-12">
+          <div class="cards">
+            <img alt="Quick Resolution" src="./assest/shield.svg" height="45px">
+            <p>60 days service<br> warranty</p>
+          </div>
+        </li>
+        <li class="col-md-3 col-sm-12">
+          <div class="cards">
+            <img alt="Intelligent algorithm" src="./assest/trust.svg" height="45px">
+            <p>Dedicated relationship manager</p>
+          </div>
+        </li>
+        <li>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- How drives works -->
+
+  <section class="how-work">
+    <div class="container-1 text-center">
+      <h2 class="home-h2">How Drives Work
+        <div class="section-header-underline"></div>
+      </h2>
+      <div class="row margin-top-40">
+        <div class="customize-tools">
+          <ul class="thumbnails  ul-border col-md-12 col-sm-12 submenu-toggle home-slider-nav"
+            aria-label="Carousel Pagination">
+            <li class="col-md-4 ul-list col-sm-12" data-nav="0" tabindex="-1" aria-selected="false"
+              aria-controls="tns1-item0">
+              <div class="cards">
+                <div class="cards-padding">
+                  <img class="cards-img" alt="Verified professionals" id="first1"
+                    src="assets/images/home-page/how-work-2.svg" height="90px">
+                  <p>Choose the best-suited package <br>for your business</p>
+                  <span class="card-p">A comprehensive set of services for one-stop execution</span>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-4 col-sm-12 tns-nav-active" data-nav="1" tabindex="0" aria-selected="true"
+              aria-controls="tns1-item1">
+              <div class="cards">
+                <div class="cards-padding">
+                  <img class="cards-img" alt="Gapoon Warranty" src="assets/images/home-page/how-work-1.svg"
+                    height="90px">
+                  <p>Enjoy periodic maintenance at no <br>additional service cost</p>
+                  <span class="card-p">Preventive audits, unlimited breakdowns with digital tracking &amp;
+                    updates</span>
+                </div>
+              </div>
+            </li>
+            <li class="col-md-4 col-sm-12" data-nav="2" tabindex="-1" aria-selected="false" aria-controls="">
+              <div class="cards">
+                <div class="cards-padding">
+                  <img class="cards-img" alt="Quick Resolution" src="assets/images/home-page/how-work-3.svg"
+                    height="90px">
+                  <p>Get 100% warranty <br>for all services</p>
+                  <span class="card-p">SLA based guarantee on all properties with dedicated client support</span>
+                </div>
+              </div>
+            </li>
+            <li data-nav="3" tabindex="-1" aria-selected="false" aria-controls="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Select community -->
+
+  <div class="know_section">
+    <div class="container-fluid">
+      <div style="display:flex" class="row">
+        <div style="align-self: flex-end;" class="hidden-xs col-sm-5 col-md-5 margin-top-50">
+          <div class="know_image">
+            <img src="assets/images/home-page/Relaxed-illustration.svg" alt="know">
+          </div>
+        </div>
+        <div class="hidden-xs col-sm-1 col-md-1"></div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="get_quote-1">
+            <div class="know_text">
+              <div class="know_text_head">
+                <h2 class="home-h2-1">Focus on your business while <br> DusMinute maintains your property</h2>
+              </div>
+              <div class="know_text_subhead">
+                <p>Ensure optimal lifecycle management of properties with our <br> unique drives offerings</p>
+              </div>
+            </div>
+            <select style="width: 50%; height: 100%; color: #ffffff; background-color: #384861; font-size: medium;"
+              onclick="selectCommunity()" id="community" name="entry.610535047">
+              <option value="null">Please select community</option>
+              <option value="AdarshPalmRetreat">Adarsh Palm Retreat</option>
+              <option value="BrigadeCosmopolis">Brigade Cosmopolis</option>
+              <option value="BrigadeLakefront">Brigade Lakefront</option>
+              <option value="BrigadeMeadows">Brigade Meadows</option>
+              <option value="BrigadeOmega">Brigade Omega</option>
+              <option value="BrigadePanorama">Brigade Panorama</option>
+              <option value="DivyasreeRepublicofWhitefield">Divyasree Republic of Whitefield</option>
+              <option value="GMInfinite">GM Infinite</option>
+              <option value="GodrejEcity">Godrej Ecity</option>
+              <option value="PrestigeLakeside">Prestige Lakeside</option>
+              <option value="PrestigeSunrisePark">Prestige Sunrise Park</option>
+              <option value="ProvidentSunworth">Provident Sunworth</option>
+              <option value="RamkyOneNorth">Ramky One North</option>
+              <option value="SalarpuriaGreenage">Salarpuria Greenage</option>
+              <option value="ShriramSummitt">Shriram Summitt</option>
+              <option value="SNNRajGreenbay">SNN Raj Greenbay</option>
+              <option value="SNNRajEtternia">SNN Raj Etternia</option>
+              <option value="SobhaDreamAcres">Sobha Dream Acres</option>
+              <option value="SobhaSiliconOasis">Sobha Silicon Oasis</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Explore services -->
+
+  <section class="services">
+    <div class="container text-center">
+      <h2 class="home-h2">Explore Our Services
+        <div class="section-header-underline"></div>
+      </h2>
+
+      <div class="row margin-top-40">
+        <div class="servc-container-box text-center">
+          <div class="col-md-2  width-20-top">
+            <as="back1 demo">
+              <div id="card-1" class=" cards2 text-center">
+                <div class="card-image">
+                  <div id="img"></div>
+                  <div id="img2"></div>
+                </div>
+                <p>A.C. REPAIR</p>
+                <span>Installation, Repair, Gas refill</span>
+              </div></a>
+          </div>
+          <div class="col-md-2  width-20-top">
+            <aass="back1 demo">
+              <div id="card-2" class=" cards2 text-center">
+                <div class="card-image">
+                  <div id="img"></div>
+                  <div id="img2"></div>
+                </div>
+                <p>ELECTRICIAN</p>
+                <span>Fan Repair, Light Fitting, Wiring</span>
+              </div></a>
+          </div>
+          <div class="col-md-2  width-20-top">
+            <as="back1 demo">
+              <div id="card-3" class=" cards2 text-center">
+                <div class="card-image">
+                  <div id="img"></div>
+                  <div id="img2"></div>
+                </div>
+                <p>CARPENTER</p>
+                <span>Custom Wardrobe, Modular Kitchen</span>
+              </div></a>
+          </div>
+          <div class="col-md-2  width-20-top">
+            <aack1 demo">
+              <div id="card-4" class=" cards2 text-center">
+                <div class="card-image">
+                  <div id="img"></div>
+                  <div id="img2"></div>
+                </div>
+                <p>MASON</p>
+                <span>Demolition, Civil work, Plastering</span>
+              </div></a>
+          </div>
+          <div class="col-md-2  width-20-top">
+            <a"back1 demo">
+              <div id="card-8" class=" cards2 text-center">
+                <div class="card-image">
+                  <div id="img"></div>
+                  <div id="img2"></div>
+                </div>
+                <p>PLUMBER</p>
+                <span>Leakage, Blockage, Seepage</span>
+              </div></a>
+          </div>
+          <div class="col-md-2 width-20 margin-top-30">
+            <alass="back1 demo">
+              <div id="card-6" class=" cards2 text-center">
+                <div class="card-image">
+                  <div id="img"></div>
+                  <div id="img2"></div>
+                </div>
+                <p>PEST CONTROL</p>
+                <span>GPC, Cockroach, Bed-bugs</span>
+              </div></a>
+          </div>
+          <div class="col-md-2 width-20 margin-top-30">
+            <a="back1 demo">
+              <div id="card-7" class=" cards2 text-center">
+                <div class="card-image">
+                  <div id="img"></div>
+                  <div id="img2"></div>
+                </div>
+                <p>PAINTING</p>
+                <span>Interior, Exterior, Texture</span>
+              </div></a>
+          </div>
+          <div class="col-md-2 width-20 margin-top-30">
+            <a class="back1 demo">
+              <div id="card-5" class=" cards2 text-center">
+                <div class="card-image">
+                  <div id="img"></div>
+                  <div id="img2"></div>
+                </div>
+                <p>HOUSE CLEANING</p>
+                <span>Deep cleaning, Bathroom, Scrubbing</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-2 width-20 margin-top-30">
+            <a class="back1 demo">
+              <div id="card-9" class=" cards2 text-center">
+                <div class="card-image">
+                  <div id="img"></div>
+                  <div id="img2"></div>
+                </div>
+                <p>APPLIANCE REPAIR</p>
+                <span>Washing Machine, Refrigerator, Microwave</span>
+              </div>
+            </a>
+          </div>
+          <div class="col-md-2 width-20 margin-top-30">
+            <aclass="back1 demo">
+              <div id="card-10" class=" cards2 text-center">
+                <div class="card-image">
+                  <div id="img"></div>
+                  <div id="img2"></div>
+                </div>
+                <p>SOFA CLEANING</p>
+                <span>Shampooing, Vacuuming, Steaming</span>
+              </div></a>
+          </div>
+          <div class="col-md-2 width-20 margin-top-30">
+            <a class="back1 demo">
+              <div id="card-11" class=" cards2 text-center">
+                <div class="card-image">
+                  <div id="img"></div>
+                  <div id="img2"></div>
+                </div>
+                <p>TILES &amp; FLOORING</p>
+                <span>Wooden flooring, Wall/ Vitrified tiles</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <!-- <div id="booking" class="w-100 booking">
       <div class="form-style-5">
-        <form>
+        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeaQHnwtXV_mR2VPkZfCglzf4XuqBQpuYMI783mOiBVf5WYgA/formResponse">
         <fieldset>
         <legend><span class="number">1</span> Booking Info</legend>
-        <input type="text" name="field1" placeholder="Your Name *">
-        <input type="email" name="field2" placeholder="Your Email *">
-        <input type="text" name="field3" placeholder="Your Mobile *">
-        <textarea name="field4" placeholder="Your address *"></textarea>        
+        <input id="name" type="text" name="entry.12691841" placeholder="Your Name *">
+        <input id="email" type="email" name="entry.914288549" placeholder="Your Email *">
+        <input id="mobile" type="text" name="entry.1819259564" placeholder="Your Mobile *">
+        <textarea id="address" name="entry.1254923631" placeholder="Your address *"></textarea>        
         <div class="row mr-auto">
-          <div class="col-6">
-            <label for="job">Communitites:</label>
-        <select id="job" name="field4">        
+          <div class="col-6"> 
+            <label for="community">Communitites:</label>
+        <select onclick="selectCommunity()" id="community" name="entry.610535047">
+          <option value="null">Please select community</option>        
           <option value="AdarshPalmRetreat">Adarsh Palm Retreat</option>
           <option value="BrigadeCosmopolis">Brigade Cosmopolis</option>
           <option value="BrigadeLakefront">Brigade Lakefront</option>
@@ -114,43 +563,220 @@
         </select>
           </div>
         <div class="col-6">
-          <label for="job">Drives:</label>
-        <select id="job" name="field4">        
-          <option value="AdarshPalmRetreat">Adarsh Palm Retreat</option>                                             
+          <label for="drives">Drives:</label>
+        <select onclick="selectDrive()" id="drives" name="entry.1301572894">
+          <option value="null">Please select drive</option>         
+                                                     
         </select>
         </div>
         </div>
         <div class="row mr-auto">
           <div class="col-6">
             <label for="job">Size:</label>
-        <select id="job" name="field4">        
-          <option value="AdarshPalmRetreat">Adarsh Palm Retreat</option>                                            
+        <select onclick="selectSize()" id="size" name="entry.1738443349">
+          <option value="null">Please select size</option>         
+                                                     
         </select>
           </div>
         <div class="col-6">
           <label for="job">Time Slot:</label>
-          <select id="job" name="field4">
-            <option value="">8Am - 9-Am</option>        
-            <option value="">9Am - 10Am</option>
-            <option value="">10Am - 11Am</option>
-            <option value="">11Am - 12Pm</option>
-            <option value="">12Pm - 1Pm</option>
-            <option value="">1Pm - 2Pm</option>
-            <option value="">2Pm - 3Pm</option>
-            <option value="">4Pm - 5Pm</option>
-            <option value="">6Pm - 7Pm</option>
+          <select id="slot" name="slot">
+            <option value="8Am - 9-Am">8Am - 9-Am</option>        
+            <option value="9Am - 10Am">9Am - 10Am</option>
+            <option value="10Am - 11Am">10Am - 11Am</option>
+            <option value="11Am - 12Pm">11Am - 12Pm</option>
+            <option value="12Pm - 1Pm">12Pm - 1Pm</option>
+            <option value="1Pm - 2Pm">1Pm - 2Pm</option>
+            <option value="2Pm - 3Pm">2Pm - 3Pm</option>
+            <option value="4Pm - 5Pm">4Pm - 5Pm</option>
+            <option value="6Pm - 7Pm">6Pm - 7Pm</option>
           </select>          
         </div>
         </div>
-        <p>Your Booking Price: 600 Rs</p>     
-        </fieldset>        
-        <input type="submit" value="Book" />
-        </form>
+        <p id="price"></p>     
+        </fieldset>       
+        <button type="submit" onclick="getInfo()" value="Book">Book</button>
+      </form>
         </div>
-    </div>
+    </div> -->
 
-    <!-- Footer -->
-    <div id="footer" class="footer w-100">
+  <section class="service-second-section">
+    <div class="container-fluid padding-0">
+      <div class="back-blue">
+        <h4 class="heading white text-center padding-30">Book a AC Repair Service</h4>
+        <div class="gmc-white-box">
+          <div class="row padding-0 col-heading-box">
+            <div class="col-md-12 col-heading modal-list-items-box">
+              <div class="col-md-3 text-center">
+                List
+              </div>
+              <div class="col-md-2 text-center">
+                Category
+              </div>
+              <div class="col-md-2 text-center">
+                Price/unit
+              </div>
+              <div class="col-md-1">
+                Select
+              </div>
+              <div class="col-md-1">
+                Quantity
+              </div>
+              <div class="col-md-3">
+                Selected Items
+              </div>
+            </div>
+            <div class="col-md-12 padding-0 services-list-box">
+              <div class="col-md-9 padding-0 services-list-items">
+                <div class="tabs-container">
+                  <!-- Here drive list -->
+                  <!-- <div class="tab active" id="one"><a class="tab-title">AC Repair</a></div> -->
+                  <div class="tab-content one" id="">
+                    <table class="table table-striped">
+                      <tbody>
+                        <tr>
+                          <td width="40%">General Servicing</td>
+                          <td width="20%">₹ 300</td>
+                          <td width="28%">
+                            <div class="checkbox radio-margin">
+                              <label>
+                                <input type="checkbox" id="2" data-price_val="300" data-sid="2" data-ssid="64"
+                                  data-category="0"
+                                  onclick="displayShoppingCart('AC Repair','General Servicing','300', this)">
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                              </label>
+                            </div>
+                          </td>
+                          <td width="12%">
+                            <input type="text" data-sid="2" data-ssid="64" data-category="0" data-showquantity="true"
+                              data-max_quantity="10" id="source" onkeyup="copyText(this);" style="display: block;"
+                              hidden="hidden">
+
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="40%">Detail Servicing</td>
+                          <td width="20%">₹ 600</td>
+                          <td width="28%">
+                            <div class="checkbox radio-margin">
+                              <label>
+                                <input type="checkbox" id="2" data-price_val="600" data-sid="2" data-ssid="64"
+                                  data-category="1"
+                                  onclick="displayShoppingCart('AC Repair','Detail Servicing','600', this)">
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                              </label>
+                            </div>
+                          </td>
+                          <td width="12%">
+                            <input type="text" data-sid="2" data-ssid="64" data-category="1" data-showquantity="true"
+                              data-max_quantity="10" id="source" onkeyup="copyText(this);" style="display: block;"
+                              hidden="hidden">
+
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="40%">PCB Repair</td>
+                          <td width="20%">₹ 1800 - 4000</td>
+                          <td width="28%">
+                            <div class="checkbox radio-margin">
+                              <label>
+                                <input type="checkbox" id="2" data-price_val="1800,4000" data-sid="2" data-ssid="64"
+                                  data-category="2"
+                                  onclick="displayShoppingCart('AC Repair','PCB Repair','1800 - 4000', this)">
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                              </label>
+                            </div>
+                          </td>
+                          <td width="12%">
+                            <input type="text" data-sid="2" data-ssid="64" data-category="2" data-showquantity="true"
+                              data-max_quantity="10" id="source" onkeyup="copyText(this);" style="display: block;"
+                              hidden="hidden">
+
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="40%">Installation</td>
+                          <td width="20%">₹ 1500</td>
+                          <td width="28%">
+                            <div class="checkbox radio-margin">
+                              <label>
+                                <input type="checkbox" id="2" data-price_val="1500" data-sid="2" data-ssid="64"
+                                  data-category="3"
+                                  onclick="displayShoppingCart('AC Repair','Installation','1500', this)">
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                              </label>
+                            </div>
+                          </td>
+                          <td width="12%">
+                            <input type="text" data-sid="2" data-ssid="64" data-category="3" data-showquantity="true"
+                              data-max_quantity="10" id="source" onkeyup="copyText(this);" hidden="hidden">
+
+                          </td>
+                        </tr>
+                        <tr>
+                          <td width="40%">Uninstallation</td>
+                          <td width="20%">₹ 1000</td>
+                          <td width="28%">
+                            <div class="checkbox radio-margin">
+                              <label>
+                                <input type="checkbox" id="2" data-price_val="1000" data-sid="2" data-ssid="64"
+                                  data-category="4"
+                                  onclick="displayShoppingCart('AC Repair','Uninstallation','1000', this)">
+                                <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                              </label>
+                            </div>
+                          </td>
+                          <td width="12%">
+                            <input type="text" data-sid="2" data-ssid="64" data-category="4" data-showquantity="true"
+                              data-max_quantity="10" id="source" onkeyup="copyText(this);" hidden="hidden">
+
+                          </td>
+                        </tr>
+
+
+
+
+                      </tbody>
+                    </table>
+                    <div class="date_time_feature margin-top-0 col-md-12">
+                      <div class="green-color booking_datetime_heading text-left justify-left">Notes <img
+                          class="marg-left" src="/assets/images/service-page/done.svg" height="20"></div>
+                      <ul class="text-left">
+                        <li>Visiting Charges of Rs. 99/- is applicable if no service is availed.</li>
+                        <li>Minimum service charge is Rs.250.</li>
+                        <li>Prices includes labour charges only. Any material requirement will be extra &amp; charged as
+                          actuals</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </section>
+
+  <!-- Footer -->
+  <!-- <div id="footer" class="footer w-100">
       <div class="row mr-auto footer-icon">
         <div class="col-sm-1 col-md-4 col-lg-4">
           <div class="row mr-auto">
@@ -208,6 +834,232 @@
           </div>
         </div>
 
-    </div>
+    </div> -->
+
+  <!-- <footer>
+      <div class="container">
+      <div class="row padding-10 footer-main-container">
+      <div class="col-md-5 col-sm-6 footerleft ">
+      <div class="logofooter"><img alt="Gapoon Logo" src="/assets/images/Logo.png" height="40px"></div>
+      <p>Gapoon is a one-stop solution that caters to all your maintenance service requirements. Currently based out of bangalore it covers an array of services ranging from plumbers, electricians, carpenters, AC repair &amp; maintenance, house cleaning, pest control, appliance repair, civil work, tiling &amp; flooring work among others. Gapoon’s intelligent algorithm mapping helps you connect with the best suited service professional.
+      </p>
+      <p>Our unique annual subscription packages- Gapoon Maintenance Cover (GMC) offer a comprehensive solution to any property with unlimited scope of services, trusted professionals, cashless transactions, year long convenience &amp; guaranteed satisfaction. #GMC </p>
+      </div>
+      <div class="footer-right">
+      <div class="col-md-3 col-sm-6 paddingtop-bottom servc-footr">
+      <h6 class="heading7">SERVICES</h6>
+      <ul class="footer-ul">
+      <li><a href="/bangalore/plumber">Plumber in Bangalore</a></li>
+      <li><a href="/bangalore/electrician">Electrician in Bangalore</a></li>
+      <li><a href="/bangalore/carpenter">Carpenter in Bangalore</a></li>
+      <li><a href="/bangalore/appliance-repair">Appliances Repair in Bangalore</a></li>
+      <li><a href="/bangalore/pest-control">Pest Control in Bangalore</a></li>
+      <li><a href="/bangalore/painting">Painter in Bangalore</a></li>
+      <li><a href="/bangalore/ac-repair">AC repair in Bangalore</a></li>
+      <li><a href="/bangalore/sofa-cleaning">Sofa Carpet Cleaning in Bangalore</a></li>
+      <li><a href="/bangalore/mason">Manson/Civil Work in Bangalore</a></li>
+      <li><a href="/bangalore/tiles-flooring">Tile/granite laying in Bangalore</a></li>
+      </ul>
+      </div>
+      <div class="col-md-2 col-sm-6 paddingtop-bottom side-padding">
+      <h6 class="heading7">COMPANY</h6>
+      <ul class="footer-ul">
+      <li><a href="/about-us">About Us</a></li>
+      <li><a href="/partner-with-us">Partner with us</a></li>
+      <li><a href="/feedback">Feedback</a></li>
+      <li><a href="/faqs">FAQs</a></li>
+      <li><a href="/contact-us">Contact us</a></li>
+      <li><a href="/terms-conditions">Terms and conditions</a></li>
+      <li> <a href="/privacy-policy">Privacy Policy</a> </li>
+      <li> <a href="/blog" target="_blank">Blog</a> </li>
+       
+      
+      </ul>
+      </div>
+      <div class="col-md-2 col-sm-6 paddingtop-bottom gmc-ftr">
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      <a href="https://play.google.com/store/apps/details?id=com.gapoon.gapoon&amp;hl=en">
+      <img alt="Icon" class="img-resposive margin-top-10 " src="../assets/images/android-app.svg" height="42"></a>
+      <ul class="social">
+      <li><a href="https://www.facebook.com/GapoonServices/" target="_blank"><img alt="fb" src="/assets/images/social/facebook-letter-logo.svg" height="12"> </a></li>
+      <li><a href="https://www.linkedin.com/company/gapoon-online-consumer-services" target="_blank"><img alt="linkedin" src="/assets/images/social/linkedin-logo.svg" height="12"></a></li>
+      <li><a href="https://plus.google.com/+Gapoon2015/posts" target="_blank"><img alt="g+" src="/assets/images/social/google-plus.svg" height="12"></a></li>
+      <li><a href="https://twitter.com/gapoonservices" target="_blank"><img alt="twitter" src="/assets/images/social/twitter.svg" height="12"></a></li>
+      </ul>
+      <br>
+      <div>
+      <h6 class="heading7 vis-hid">GAPOON MAINTENANCE COVER PACKAGES</h6>
+      </div>
+      </div>
+      </div>
+      </div>
+      </div>
+      </footer> -->
 </body>
+<script>
+  var drives = [
+    {
+      AdarshPalmRetreat: {
+        driveName: 'AdarshPalmRetreat drive1',
+        size: [
+          { '1bhk': 200 },
+          { '2bhk': 300 },
+          { '3bhk': 350 },
+        ]
+      },
+    },
+    {
+      AdarshPalmRetreat: {
+        driveName: 'AdarshPalmRetreat drive2',
+        size: [
+          { '1bhk': 200 },
+          { '2bhk': 300 },
+          { '3bhk': 350 },
+        ]
+      },
+    },
+    {
+      BrigadeCosmopolis: {
+        driveName: 'BrigadeCosmopolis drive1',
+        size: [
+          { '1bhk': 200 },
+          { '2bhk': 300 },
+          { '3bhk': 350 },
+        ]
+      },
+    },
+    {
+      BrigadeCosmopolis: {
+        driveName: 'BrigadeCosmopolis drive2',
+        size: [
+          { '1bhk': 200 },
+          { '2bhk': 300 },
+          { '3bhk': 350 },
+        ]
+      },
+    },
+  ]
+  function getInfo() {
+    // var name = document.getElementById('name').value
+    // var email = document.getElementById('email').value
+    // var mobile = document.getElementById('mobile').value
+    // var community = document.getElementById('community').value
+    // var drive = document.getElementById('drives').value
+    // var size = document.getElementById('size').value
+    // var slot = document.getElementById('slot').value
+    // var price = document.getElementById('price').innerHTML
+    // // console.log(name, mobile, email, community, drive, size, slot, price)
+    // $.ajax({
+    //             url: "https://script.google.com/a/dusminute.com/macros/s/AKfycbyIxGA7stFXQLcmPiXkUGFn3CUnQTwlbpbhZ7jH2-_j-8T2Z3IY/exec",
+    //             data: { "entry_1402836733": email,
+    //             "entry_1874720748": first, "entry_2092106103":
+    //             last, "entry_944373055": company },
+    //             type: "POST",
+    //             dataType: "xml",
+    //             statusCode: {
+    //                 0: function () {
+    //                     window.location.replace("ThankYou.html");
+    //                 },
+    //                 200: function () {
+    //                     window.location.replace("ThankYou.html");
+    //                 }
+    //             }
+    //         }); 
+    //   const scriptURL = 'https://script.google.com/a/dusminute.com/macros/s/AKfycbyIxGA7stFXQLcmPiXkUGFn3CUnQTwlbpbhZ7jH2-_j-8T2Z3IY/exec'
+    // const form = document.forms['submit-to-google-sheet']
+    // console.log(new FormData(form))
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      // fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      //   .then(response => console.log('Success!', response))
+      //   .catch(error => console.error('Error!', error.message))
+      // form.append("name", "Robert");
+      //     var xhrForm = new XMLHttpRequest();
+
+      // xhrForm.open("POST", scriptURL);
+      // xhrForm.setRequestHeader('Content-type', 'application/json')
+      // xhrForm.send(JSON.stringify(form))
+
+      // xhrForm.send(form);
+
+      var xmlhttp = new XMLHttpRequest();
+      xmlhttp.open("POST", scriptURL);
+      xmlhttp.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+      xmlhttp.send();
+    })
+  }
+
+  function selectCommunity() {
+    var existOption = document.getElementById('drives')
+    while (existOption.hasChildNodes()) {
+      existOption.removeChild(existOption.firstChild);
+    }
+    var community = document.getElementById('community').value
+    // console.log(typeof(community))
+    for (let item of drives) {
+      if (item[community]) {
+        // console.log(item[community].driveName)
+        var option = document.createElement('option')
+        var optionParent = document.getElementById('drives')
+        option.innerHTML = item[community].driveName
+        optionParent.appendChild(option)
+      }
+    }
+  }
+
+  function selectDrive() {
+    var community = document.getElementById('community').value
+    console.log(community)
+    if (community === 'null') {
+      alert('Please select community')
+    }
+    var existOption = document.getElementById('size')
+    while (existOption.hasChildNodes()) {
+      existOption.removeChild(existOption.firstChild);
+    }
+    var selectDriveName = document.getElementById('drives').value
+    for (let item of drives) {
+      if (item[community] && item[community].driveName === selectDriveName) {
+        item[community].size.forEach(function (item) {
+          Object.keys(item).forEach(function (key) {
+            var option = document.createElement('option')
+            var optionParent = document.getElementById('size')
+            option.innerHTML = key
+            optionParent.appendChild(option)
+          });
+        });
+      }
+    }
+  }
+
+  function selectSize() {
+    var community = document.getElementById('community').value
+    var selectDriveName = document.getElementById('drives').value
+    if (community === 'null' && !selectDriveName === 'null') {
+      alert('Please select Drive')
+    }
+    var price = document.getElementById('price')
+    var selectSize = document.getElementById('size').value
+    // console.log(selectSize)      
+    for (let item of drives) {
+      if (item[community] && item[community].driveName === selectDriveName) {
+        for (let sizeItem of item[community].size) {
+          if (sizeItem[selectSize]) {
+            price.innerHTML = 'Your Discounted Price: ' + sizeItem[selectSize] + ' Rs.'
+          }
+        }
+      }
+    }
+  }
+</script>
+
 </html>
