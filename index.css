@@ -13,6 +13,7 @@ html, html a {
 }
 html {
    font-size: 10px;
+   scroll-behavior: smooth;
 }
 html {
    font-family: sans-serif;
@@ -439,11 +440,11 @@ section.service-second-section {
    font-size: 12px;
 }
 
-@media only screen and (max-device-width:414px) {
+/* @media only screen and (max-device-width:414px) {
    footer {
       margin-top: 150%;
    }
-}
+} */
 
 /* Model css */
 
