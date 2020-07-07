@@ -3,8 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" type="text/css" href="./index.css" media="screen"/>
-  <!-- CSS only -->
+  <!-- CSS only --><!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
 <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
 
 <!-- JS, Popper.js, and jQuery -->
@@ -53,7 +57,7 @@
       <h1 class="bold-heading2">DusMinute mega drives
       <strong class="green-color">Service event for your community</strong></h1>
       <div class="col-md-12 explore-pkg-btn-box col-xs-12 text-center margin-top-20">
-      <a class="explore-pkg-btn" onclick="ScrollTo('gmc-packages')">Explore Packages</a>
+      <a href="#driveSection" class="explore-pkg-btn" onclick="ScrollTo('gmc-packages')">Book Drives</a>
       </div>
       </div>
       <div class="col-md-6">
@@ -149,7 +153,7 @@
 
       <!-- select community -->
 
-      <div class="know_section">
+      <div class="know_section" id="driveSection">
         <div class="container-fluid">
           <div style="display:flex" class="row">
             <div style="align-self: flex-end;" class="hidden-xs col-sm-5 col-md-5 margin-top-50">
@@ -170,7 +174,7 @@
                 </div>
                 <div class="know_buttons row">
                   <div class="col-xs-12 col-sm-4 col-md-4">
-                    <select onclick="" class="dark-btn-lg animate bounce quote-btn w-50">
+                    <select id="community" onclick="selectCommunity(value)" class="dark-btn-lg animate bounce quote-btn w-50">
                       <option value='null'>Select your community</option>                      
                       <option value="AdarshPalmRetreat">Adarsh Palm Retreat</option>
                       <option value="BrigadeCosmopolis">Brigade Cosmopolis</option>
@@ -208,213 +212,107 @@
 
       <div class="container-fluid padding-0">
         <div class="back-blue">
-        <h4 class="heading white text-center padding-30">Book Mega Service Event</h4>
-        <div class="gmc-white-box">
-        <div class="row padding-0 col-heading-box">
-        <div class="col-md-12 col-heading modal-list-items-box">
-        <div class="col-md-3 text-center">
-        Name
-        <div class="col-md-3 text-center">
-          Data
+          <h4 class="heading white text-center padding-30">Book Mega Service Event</h4>
+          <div class="gmc-white-box">
+            <div class="row padding-0 col-heading-box">
+              <div class="col-md-12 col-heading modal-list-items-box">
+                <div class="col-md-3 text-center">
+                  Name
+                  <div class="col-md-3 text-center">
+                    Data
+                  </div>
+                </div>
+                <div class="col-md-2 text-center">
+                  Description
+                </div>
+                <div class="col-md-2 text-center">
+                  Slot
+                </div>
+                <div class="col-md-1">
+                  Select
+                </div>
+                <div class="col-md-1">
+                  Notes
+                </div>
+                <div class="col-md-3">
+                  Selected Items
+                </div>
+              </div>
+              <div class="col-md-12 padding-0 services-list-box">
+                <div class="col-md-9 padding-0 services-list-items">
+                  <div class="tabs-container">
+                    <div class="tab active row append" id="one">                      
+                        
+                        <!-- <a class="col-lg-6 tab-title">
+                          06-July-2020
+                        </a>
+
+                        <a class="col-lg-6 tab-title">
+                          AC Repair
+                        </a>                       -->
+
+                      
+                    </div>
+                    <div class="tab-content one" id="append">
+                      <table class="table table-striped">
+                        <tbody id="tbody">
+                          <!-- <tr>
+                            <td width="40%">General Servicing</td>
+                            <td width="20%"><select id="slot" name="slot">
+                              <option value="8Am - 9-Am">8Am - 9-Am</option>        
+                              <option value="9Am - 10Am">9Am - 10Am</option>
+                              <option value="10Am - 11Am">10Am - 11Am</option>
+                              <option value="11Am - 12Pm">11Am - 12Pm</option>
+                              <option value="12Pm - 1Pm">12Pm - 1Pm</option>
+                              <option value="1Pm - 2Pm">1Pm - 2Pm</option>
+                              <option value="2Pm - 3Pm">2Pm - 3Pm</option>
+                              <option value="4Pm - 5Pm">4Pm - 5Pm</option>
+                              <option value="6Pm - 7Pm">6Pm - 7Pm</option>
+                            </select> </td>
+                            <td width="28%">
+                              <div class="checkbox radio-margin">
+                                <label>
+                                  <input type="checkbox" id="2" data-price_val="300" data-sid="2" data-ssid="64"
+                                    data-category="0"
+                                    onclick="displayShoppingCart('AC Repair','General Servicing','300', this)">                                  
+                                </label>
+                              </div>
+                            </td>
+                            <td width="12%">
+                              General Servicing Notes     
+                            </td>
+                          </tr>                           -->
+                        </tbody>
+                      </table>
+                      <div class="date_time_feature margin-top-0 col-md-12">
+                        <div class="green-color booking_datetime_heading text-left justify-left">Notes <img class="marg-left"
+                            src="https://www.gapoon.com/assets/images/service-page/done.svg" height="20"></div>
+                        <ul class="text-left">
+                          <li>Visiting Charges of Rs. 99/- is applicable if no service is availed.</li>
+                          <li>Minimum service charge is Rs.250.</li>
+                          <li>Prices includes labour charges only. Any material requirement will be extra &amp; charged as
+                            actuals</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3 append-box">
+                  <h2 class=" text-center margin-top-10 append-mob-heading">Added Items</h2>
+                  <div class="col-md-12 text-center cart-empty margin-top-30" style="display: none;">
+                    <p class="grey">Your Cart is Empty!</p>
+                    <img class=" margin-top-10" src="/assets/images/service-page/empty_cart.png" height="104">
+                  </div>
+                  <div id="serviceCartItem" class="service-cart col-md-12 padding-0">                    
+                  </div>
+                  <div class="col-md-12 text-center padding-0" id="book-btn-box" style="display: block;" hidden="">
+                    
+                  </div>
+                </div>
+            </div>
+          </div>
         </div>
-        </div>        
-        <div class="col-md-2 text-center">
-        Description
-        </div>
-        <div class="col-md-2 text-center">
-        Price/unit
-        </div>
-        <div class="col-md-1">
-        Select
-        </div>
-        <div class="col-md-1">
-        Slot
-        </div>
-        <div class="col-md-3">
-        Selected Items
-        </div>
-        </div>
-        <div class="col-md-12 padding-0 services-list-box">
-        <div class="col-md-9 padding-0 services-list-items">
-        <div class="tabs-container">
-        <div class="tab active" id="one"><a class="tab-title">AC Repair</a></div>
-        <div class="tab-content one" id="append">
-        <table class="table table-striped">
-        <tbody>
-        <tr>
-        <td width="40%">General Servicing</td>
-        <td width="20%">₹ 300</td>
-        <td width="28%">
-        <div class="checkbox radio-margin">
-        <label>
-        <input type="checkbox" id="2" data-price_val="300" data-sid="2" data-ssid="64" data-category="0" onclick="displayShoppingCart('AC Repair','General Servicing','300', this)">
-        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-        </label>
-        </div>
-        </td>
-        <td width="12%">
-        <input type="text" data-sid="2" data-ssid="64" data-category="0" data-showquantity="true" data-max_quantity="10" id="source" onkeyup="copyText(this);" hidden="hidden">
-        
-        </td>
-        </tr>
-        <tr>
-        <td width="40%">Detail Servicing</td>
-        <td width="20%">₹ 600</td>
-        <td width="28%">
-        <div class="checkbox radio-margin">
-        <label>
-        <input type="checkbox" id="2" data-price_val="600" data-sid="2" data-ssid="64" data-category="1" onclick="displayShoppingCart('AC Repair','Detail Servicing','600', this)">
-        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-        </label>
-        </div>
-        </td>
-        <td width="12%">
-        <input type="text" data-sid="2" data-ssid="64" data-category="1" data-showquantity="true" data-max_quantity="10" id="source" onkeyup="copyText(this);" hidden="hidden">
-        
-        </td>
-        </tr>
-        <tr>
-        <td width="40%">PCB Repair</td>
-        <td width="20%">₹ 1800 - 4000</td>
-        <td width="28%">
-        <div class="checkbox radio-margin">
-        <label>
-        <input type="checkbox" id="2" data-price_val="1800,4000" data-sid="2" data-ssid="64" data-category="2" onclick="displayShoppingCart('AC Repair','PCB Repair','1800 - 4000', this)">
-        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-        </label>
-        </div>
-        </td>
-        <td width="12%">
-        <input type="text" data-sid="2" data-ssid="64" data-category="2" data-showquantity="true" data-max_quantity="10" id="source" onkeyup="copyText(this);" hidden="hidden">
-        
-        </td>
-        </tr>
-        <tr>
-        <td width="40%">Installation</td>
-        <td width="20%">₹ 1500</td>
-        <td width="28%">
-        <div class="checkbox radio-margin">
-        <label>
-        <input type="checkbox" id="2" data-price_val="1500" data-sid="2" data-ssid="64" data-category="3" onclick="displayShoppingCart('AC Repair','Installation','1500', this)">
-        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-        </label>
-        </div>
-        </td>
-        <td width="12%">
-        <input type="text" data-sid="2" data-ssid="64" data-category="3" data-showquantity="true" data-max_quantity="10" id="source" onkeyup="copyText(this);" hidden="hidden">
-        
-        </td>
-        </tr>
-        <tr>
-        <td width="40%">Uninstallation</td>
-        <td width="20%">₹ 1000</td>
-        <td width="28%">
-        <div class="checkbox radio-margin">
-        <label>
-        <input type="checkbox" id="2" data-price_val="1000" data-sid="2" data-ssid="64" data-category="4" onclick="displayShoppingCart('AC Repair','Uninstallation','1000', this)">
-        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-        </label>
-        </div>
-        </td>
-        <td width="12%">
-        <input type="text" data-sid="2" data-ssid="64" data-category="4" data-showquantity="true" data-max_quantity="10" id="source" onkeyup="copyText(this);" hidden="hidden">
-        
-        </td>
-        </tr>
-        <tr>
-        <td width="40%">Uninstallation &amp; Installation</td>
-        <td width="20%">₹ 2000</td>
-        <td width="28%">
-        <div class="checkbox radio-margin">
-        <label>
-        <input type="checkbox" id="2" data-price_val="2000" data-sid="2" data-ssid="64" data-category="5" onclick="displayShoppingCart('AC Repair','Uninstallation &amp; Installation','2000', this)">
-        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-        </label>
-        </div>
-        </td>
-        <td width="12%">
-        <input type="text" data-sid="2" data-ssid="64" data-category="5" data-showquantity="true" data-max_quantity="10" id="source" onkeyup="copyText(this);" hidden="hidden">
-        
-        </td>
-        </tr>
-        <tr>
-        <td width="40%">Gas Refill - Top Up</td>
-        <td width="20%">₹ 800</td>
-        <td width="28%">
-        <div class="checkbox radio-margin">
-        <label>
-        <input type="checkbox" id="2" data-price_val="800" data-sid="2" data-ssid="64" data-category="6" onclick="displayShoppingCart('AC Repair','Gas Refill - Top Up','800', this)">
-        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-        </label>
-        </div>
-        </td>
-        <td width="12%">
-        <input type="text" data-sid="2" data-ssid="64" data-category="6" data-showquantity="true" data-max_quantity="10" id="source" onkeyup="copyText(this);" hidden="hidden">
-        
-        </td>
-        </tr>
-        <tr>
-        <td width="40%">Gas Refill - Upto 1 Ton</td>
-        <td width="20%">₹ 1500</td>
-        <td width="28%">
-        <div class="checkbox radio-margin">
-        <label>
-        <input type="checkbox" id="2" data-price_val="1500" data-sid="2" data-ssid="64" data-category="7" onclick="displayShoppingCart('AC Repair','Gas Refill - Upto 1 Ton','1500', this)">
-        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-        </label>
-        </div>
-        </td>
-        <td width="12%">
-        <input type="text" data-sid="2" data-ssid="64" data-category="7" data-showquantity="true" data-max_quantity="10" id="source" onkeyup="copyText(this);" hidden="hidden">
-        
-        </td>
-        </tr>
-        <tr>
-        <td width="40%">Gas Refill - 1-2 Ton</td>
-        <td width="20%">₹ 1800</td>
-        <td width="28%">
-        <div class="checkbox radio-margin">
-        <label>
-        <input type="checkbox" id="2" data-price_val="1800" data-sid="2" data-ssid="64" data-category="8" onclick="displayShoppingCart('AC Repair','Gas Refill - 1-2 Ton','1800', this)">
-        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-        </label>
-        </div>
-        </td>
-        <td width="12%">
-        <input type="text" data-sid="2" data-ssid="64" data-category="8" data-showquantity="true" data-max_quantity="10" id="source" onkeyup="copyText(this);" hidden="hidden">
-        
-        </td>
-         </tr>
-        </tbody>
-        </table>
-        <div class="date_time_feature margin-top-0 col-md-12">
-        <div class="green-color booking_datetime_heading text-left justify-left">Notes <img class="marg-left" src="https://www.gapoon.com/assets/images/service-page/done.svg" height="20"></div>
-        <ul class="text-left">
-        <li>Visiting Charges of Rs. 99/- is applicable if no service is availed.</li>
-        <li>Minimum service charge is Rs.250.</li>
-        <li>Prices includes labour charges only. Any material requirement will be extra &amp; charged as actuals</li>
-        </ul>
-        </div>
-        </div>
-        </div>
-        </div>
-        <div class="col-md-3 append-box">
-        <h2 class=" text-center margin-top-10 append-mob-heading">Added Items</h2>
-        <div class="col-md-12 text-center cart-empty margin-top-30">
-        <p class="grey">Your Cart is Empty!</p>
-        <img class=" margin-top-10" src="https://www.gapoon.com/assets/images/service-page/empty_cart.png" height="104">
-        </div>
-        <div id="append" class="service-cart col-md-12 padding-0">
-        </div>
-        <div class="col-md-12 text-center padding-0" id="book-btn-box" style="display: none;" hidden="">
-        <button class="book-service-btn" onclick="modaljs('#modallogin', true)">BOOK NOW</button>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
+      </div>
 
         <!-- footer -->
 
@@ -443,7 +341,7 @@
           </ul>
           </div>
           <div class="col-md-2 col-sm-6 paddingtop-bottom side-padding">
-          <h6 class="heading7">COMPANY</h6>
+          <h6 class="heading7">COMPANY</h6>onclick="driveSelect(value)"
           <ul class="footer-ul">
           <li><a href="/about-us">About Us</a></li>
           <li><a href="/partner-with-us">Partner with us</a></li>
@@ -485,14 +383,381 @@
           </div>
           </footer>
 
+          <!-- Explore services -->
+
+          <section class="services">
+            <div class="container text-center">
+              <h2 class="home-h2">Explore Our Services
+                <div class="section-header-underline"></div>
+              </h2>
+        
+              <div class="row margin-top-40">
+                <div class="servc-container-box text-center">
+                  <div class="col-md-2  width-20-top">
+                    <a href="https://www.dusminute.com/promotions" class="back1 demo">
+                      <div id="card-1" class=" cards2 text-center">
+                        <div class="card-image">
+                          <div id="img"></div>
+                          <div id="img2"></div>
+                        </div>
+                        <p>A.C. REPAIR</p>
+                        <span>Installation, Repair, Gas refill</span>
+                      </div></a>
+                  </div>
+                  <div class="col-md-2  width-20-top">
+                    <a href="https://www.dusminute.com/promotions" class="back1 demo">
+                      <div id="card-2" class=" cards2 text-center">
+                        <div class="card-image">
+                          <div id="img"></div>
+                          <div id="img2"></div>
+                        </div>
+                        <p>ELECTRICIAN</p>
+                        <span>Fan Repair, Light Fitting, Wiring</span>
+                      </div></a>
+                  </div>
+                  <div class="col-md-2  width-20-top">
+                    <a href="https://www.dusminute.com/promotions" class="back1 demo">
+                      <div id="card-3" class=" cards2 text-center">
+                        <div class="card-image">
+                          <div id="img"></div>
+                          <div id="img2"></div>
+                        </div>
+                        <p>CARPENTER</p>
+                        <span>Custom Wardrobe, Modular Kitchen</span>
+                      </div></a>
+                  </div>
+                  <div class="col-md-2  width-20-top">
+                    <a href="https://www.dusminute.com/promotions" class="black1 demo">
+                      <div id="card-4" class=" cards2 text-center">
+                        <div class="card-image">
+                          <div id="img"></div>
+                          <div id="img2"></div>
+                        </div>
+                        <p>MASON</p>
+                        <span>Demolition, Civil work, Plastering</span>
+                      </div></a>
+                  </div>
+                  <div class="col-md-2  width-20-top">
+                    <a href="https://www.dusminute.com/promotions" class="back1 demo">
+                      <div id="card-8" class=" cards2 text-center">
+                        <div class="card-image">
+                          <div id="img">  </div>
+                          <div id="img2"></div>
+                        </div>
+                        <p>PLUMBER</p>
+                        <span>Leakage, Blockage, Seepage</span>
+                      </div></a>
+                  </div>
+                  <div class="col-md-2 width-20 margin-top-30">
+                    <a href="https://www.dusminute.com/promotions" class="back1 demo">
+                      <div id="card-6" class=" cards2 text-center">
+                        <div class="card-image">
+                          <div id="img"></div>
+                          <div id="img2"></div>
+                        </div>
+                        <p>PEST CONTROL</p>
+                        <span>GPC, Cockroach, Bed-bugs</span>
+                      </div></a>
+                  </div>
+                  <div class="col-md-2 width-20 margin-top-30">
+                    <a href="https://www.dusminute.com/promotions" class="back1 demo">
+                      <div id="card-7" class=" cards2 text-center">
+                        <div class="card-image">
+                          <div id="img"></div>
+                          <div id="img2"></div>
+                        </div>
+                        <p>PAINTING</p>
+                        <span>Interior, Exterior, Texture</span>
+                      </div></a>
+                  </div>
+                  <div class="col-md-2 width-20 margin-top-30">
+                    <a href="https://www.dusminute.com/promotions" class="back1 demo">
+                      <div id="card-5" class=" cards2 text-center">
+                        <div class="card-image">
+                          <div id="img"></div>
+                          <div id="img2"></div>
+                        </div>
+                        <p>HOUSE CLEANING</p>
+                        <span>Deep cleaning, Bathroom, Scrubbing</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2 width-20 margin-top-30">
+                    <a href="https://www.dusminute.com/promotions" class="back1 demo">
+                      <div id="card-9" class=" cards2 text-center">
+                        <div class="card-image">
+                          <div id="img"></div>
+                          <div id="img2"></div>
+                        </div>
+                        <p>APPLIANCE REPAIR</p>
+                        <span>Washing Machine, Refrigerator, Microwave</span>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-md-2 width-20 margin-top-30">
+                    <a href="https://www.dusminute.com/promotions" class="back1 demo">
+                      <div id="card-10" class=" cards2 text-center">
+                        <div class="card-image">
+                          <div id="img"></div>
+                          <div id="img2"></div>
+                        </div>
+                        <p>SOFA CLEANING</p>
+                        <span>Shampooing, Vacuuming, Steaming</span>
+                      </div></a>
+                  </div>
+                  <div class="col-md-2 width-20 margin-top-30">
+                    <a href="https://www.dusminute.com/promotions" class="back1 demo">
+                      <div id="card-11" class=" cards2 text-center">
+                        <div class="card-image">
+                          <div id="img"></div>
+                          <div id="img2"></div>
+                        </div>
+                        <p>TILES &amp; FLOORING</p>
+                        <span>Wooden flooring, Wall/ Vitrified tiles</span>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
           <!-- Copyright -->
 
           <div class="copyright">
             <div class="container">
-            <div class="col-md-4 col-sm-12 col-xs-12 copyright-box">
-            <p>© 2020 Indwell Retail Pvt. Ltd.</p>
+              <div class="col-md-4 col-sm-12 col-xs-12 copyright-box">
+                <p>© 2020 Indwell Retail Pvt. Ltd.</p>
+              </div>
             </div>
-            </div>
-            </div>
+          </div>
+
+          <!-- Model -->
+          
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+          <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <h4 class="modal-title" id="myModalLabel">User Information</h4>
+          </div>
+          <div class="modal-body">
+              <div id="booking" class="w-100 booking">
+                <div class="form-style-5">                  
+                  <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeaQHnwtXV_mR2VPkZfCglzf4XuqBQpuYMI783mOiBVf5WYgA/formResponse">                    
+                    <fieldset>
+                      <legend><span class="number">1</span> Booking Info</legend>
+                      <input id="name" type="text" name="entry.12691841" placeholder="Your Name *" required>
+                      <input id="email" type="email" name="entry.914288549" placeholder="Your Email *" required>
+                      <input id="mobile" type="number" name="entry.1819259564" class="no-arrow" placeholder="Your Mobile *" required>
+                      <textarea id="address" name="entry.1254923631" placeholder="Your address *" required></textarea>
+                      <input style="display: none"; id="driveBookInfo" name="entry.610535047">                                            
+                      <p id="price"></p>
+                    </fieldset>
+                    <button type="submit" onclick="getInfo()" value="Book">Book</button>
+                  </form>
+                </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+              <button type="button" class="btn closeModel" data-dismiss="modal">Close</button>
+              <!-- <button type="button" class="btn btn-primary">Book Drive</button> -->
+          </div>
+      </div>
+  </div>
+</div>
+
+<!-- Explore services -->
+
 </body>
+
+<script>
+
+var drives = [
+    {
+      AdarshPalmRetreat: {
+        date: '06-July-2020',
+        driveName: 'Carpet Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        size: [
+          { '1bhk': 200 },
+          { '2bhk': 300 },
+          { '3bhk': 350 },
+        ]
+      },
+    },
+    {
+      AdarshPalmRetreat: {
+        date: '06-July-2020',
+        driveName: 'Bathroom Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        size: [
+          { '1bhk': 200 },
+          { '2bhk': 300 },
+          { '3bhk': 350 },
+        ]
+      },
+    },
+    {
+      BrigadeCosmopolis: {
+        date: '06-July-2020',
+        driveName: 'Sofa Cleaning',
+        description: 'This is a drive of bridage cosmoplis',
+        notes: 'This is a notes',
+        size: [
+          { '1bhk': 200 },
+          { '2bhk': 300 },
+          { '3bhk': 350 },
+        ]
+      },
+    },
+    {
+      BrigadeCosmopolis: {
+        date: '06-July-2020',
+        driveName: 'Flies Cleaning',
+        description: 'This is a drive of bridage cosmoplis',
+        notes: 'This is a notes',
+        size: [
+          { '1bhk': 200 },
+          { '2bhk': 300 },
+          { '3bhk': 350 },
+        ]
+      },
+    },
+  ]
+
+  var slotBooked = ''
+  var title = ''
+
+  var booking = []
+
+  function selectedCheckbox() {
+    if(booking.length > 0) {
+      for(let bookingItem of booking) {          
+            // var id = "booking" + bookingItem.community + bookingItem.drive + bookingItem.size
+            // console.log(id)
+            if(document.getElementById("booking" + bookingItem.community + bookingItem.drive + bookingItem.size)) {
+              document.getElementById("booking" + bookingItem.community + bookingItem.drive + bookingItem.size).checked = true;
+              document.getElementById("slot" + bookingItem.community + bookingItem.drive + bookingItem.size).value = bookingItem.slot;
+            }
+                    
+        }
+    }
+  }
+  
+  function displayShoppingCart(e) {
+
+    removeChild('serviceCartItem')    
+    var bookingData = e.target.attributes
+    var validBookingData = true
+    if(slotBooked) {      
+      if(booking.length > 0) {
+        for(let bookingItem of booking) {
+          if(bookingItem.community === bookingData[4].nodeValue && bookingItem.drive === bookingData[5].nodeValue) {
+            document.getElementById("booking" + bookingData[4].nodeValue + bookingData[5].nodeValue + bookingData[3].nodeValue).checked = false;
+            alert('Please select only one item')
+            validBookingData = false
+            break
+          }
+        }        
+      }
+      if(validBookingData) {
+        booking.push({ community : bookingData[4].nodeValue, price : bookingData[2].nodeValue, size : bookingData[3].nodeValue, drive : bookingData[5].nodeValue, slot : slotBooked })
+      }
+
+      
+      for(let bookingItem of booking) {
+        $('.service-cart').append('<div class="col-md-12 added cls2643" style="margin-top:2px; padding-left:10px ;border-bottom: 1px solid #86a7cf;"><div class="col-md-11" style="display: flex;align-items: center; padding:0;"><div class="col-md-7 col-sm-7 col-xs-7 padding-0"><h4 style="color:rgba(19, 96, 142, 0.92);">'+ bookingItem.drive +'</h4></div><div class="col-md-5 col-sm-5 col-xs-5 text-right padding-0"><p>'+ bookingItem.price + " Rs" +'</p><p></p></div></div><div class="col-md-11" style="display: flex;align-items: center;padding:0;"><div class="col-md-6 col-sm-6 col-xs-6 padding-0"><p>'+ bookingItem.size +'</p><p></p></div><div class="col-md-6 col-sm-6 col-xs-6 text-right padding-0"><input type="text" id="dest" disabled=""></div></div></div></div>')
+        }
+
+        if(!document.getElementById('book-btn')) {
+          $('#book-btn-box').append('<button onclick="userInfo()" id="book-btn" class="book-service-btn">BOOK NOW</button>')
+        }
+    }
+    else {
+      alert('Please select slot first')
+      // var id = "bookingData" + bookingData[4].nodeValue + bookingData[5].nodeValue + bookingData[3].nodeValue
+      // console.log(id)
+      document.getElementById("booking" + bookingData[4].nodeValue + bookingData[5].nodeValue + bookingData[3].nodeValue).checked = false;      
+    }
+    slotBooked = ''
+    console.log(booking)    
+  }
+
+  function slotSelect(e) {
+    slotBooked = e.target.value
+    displayShoppingCart()
+  }
+  
+  function removeChild(id) {
+    var existOption = document.getElementById(id)
+    while (existOption.hasChildNodes()) {
+      existOption.removeChild(existOption.firstChild);
+    }
+  }
+
+  function selectCommunity(communityUserSelect) {
+    
+    removeChild('one')
+    removeChild('tbody')
+
+
+    for(item of drives) {
+      
+      if(item[communityUserSelect]) {       
+        
+        $('#one').append('<a class="col-lg-6 tab-title"onclick=driveSelect(event) title="'+item[communityUserSelect].driveName+'">' + item[communityUserSelect].date + '</a>')               
+
+        $('#one').append('<a class="col-lg-6 tab-title"onclick=driveSelect(event) title="'+item[communityUserSelect].driveName+'">'+ item[communityUserSelect].driveName +  '</a>') 
+                        
+      }
+    }
+  }
+
+  function driveSelect(e) {
+
+    removeChild('tbody')        
+    title = e.target.title   
+
+    var communityUserSelect = document.getElementById('community').value  
+
+    if(communityUserSelect) {      
+      for(let item of drives) {                       
+      if(item[communityUserSelect] && item[communityUserSelect].driveName === title) {
+
+        var notes = item[communityUserSelect].notes
+
+        item[communityUserSelect].size.forEach(function (item) {          
+          Object.keys(item).forEach(function (key) {                       
+            $('tbody').append('<tr><td>' + key + '</td><td width="20%"><select onChange="slotSelect(event)" id="slot'+ communityUserSelect + title + key +'" name="slot"><option value="null">Select Slot</option><option value="8Am - 9-Am">8Am - 9-Am</option><option value="9Am - 10Am">9Am - 10Am</option><option value="10Am - 11Am">10Am - 11Am</option><option value="11Am - 12Pm">11Am - 12Pm</option><option value="12Pm - 1Pm">12Pm - 1Pm</option><option value="1Pm - 2Pm">1Pm - 2Pm</option><option value="2Pm - 3Pm">2Pm - 3Pm</option><option value="4Pm - 5Pm">4Pm - 5Pm</option><option value="6Pm - 7Pm">6Pm - 7Pm</option></select></td><td width = "28%"><div class="checkbox radio-margin"><label><input type="checkbox" id="booking'+ communityUserSelect + title + key +'" data-price_val="'+ item[key] +'" data-size_val="'+ key +'" data-community_val="'+ communityUserSelect +'" data-drive_val="'+ title +'" data-sid="2" data-ssid="64"data-category="0"onclick="displayShoppingCart(event)"></label></div></td><td width="12%">' + notes + '</td></tr >')
+          });
+        });
+        
+      }
+    }
+
+    }
+
+    selectedCheckbox()
+
+  }
+
+  function userInfo() {
+    $("#book-btn").click(function(){
+    // show Modal
+    $('#myModal').modal('show');
+  });
+  var totalPrice = 0
+  var driveBooked = ''
+  for(let item of booking) {
+    totalPrice += parseInt(item.price)
+    driveBooked = driveBooked + ' ' + '{' + 'community: ' + item.community + ', ' + 'drive: ' + item.drive + ', ' + 'slot: ' + item.slot + ', ' + 'price: ' +  item.price + ' ' + '}'    
+  }
+  $('#price').html('Your Total Booking Amount' + ' ' + totalPrice + ' ' + 'Rs')
+  $('#driveBookInfo').val(driveBooked)  
+  }
+</script>
+
 </html>
