@@ -576,7 +576,7 @@
 var drives = [
     {
       AdarshPalmRetreat: {
-        date: '06-July-2020',
+        date: '07-July-2020',
         driveName: 'Carpet Cleaning',
         description: 'This is a drive of adarsh palm retreat',
         notes: 'This is a notes',
@@ -589,7 +589,7 @@ var drives = [
     },
     {
       AdarshPalmRetreat: {
-        date: '06-July-2020',
+        date: '07-July-2020',
         driveName: 'Bathroom Cleaning',
         description: 'This is a drive of adarsh palm retreat',
         notes: 'This is a notes',
@@ -602,7 +602,7 @@ var drives = [
     },
     {
       BrigadeCosmopolis: {
-        date: '06-July-2020',
+        date: '07-July-2020',
         driveName: 'Sofa Cleaning',
         description: 'This is a drive of bridage cosmoplis',
         notes: 'This is a notes',
@@ -615,7 +615,7 @@ var drives = [
     },
     {
       BrigadeCosmopolis: {
-        date: '06-July-2020',
+        date: '07-July-2020',
         driveName: 'Flies Cleaning',
         description: 'This is a drive of bridage cosmoplis',
         notes: 'This is a notes',
@@ -703,17 +703,35 @@ var drives = [
     removeChild('one')
     removeChild('tbody')
 
+    var drivesFound = false
+
+      var today = new Date()
+      var driveDate = new Date('07-July-2020')
+      var tdd = String(today.getDate()).padStart(2, '0');
+      var tmm = String(today.getMonth() + 1).padStart(2, '0');
+
 
     for(item of drives) {
+
+      if(item[communityUserSelect]) {
+        var driveDate = new Date(item[communityUserSelect].date)
+        var ddd = String(driveDate.getDate()).padStart(2, '0');
+        var dmm = String(driveDate.getMonth() + 1).padStart(2, '0');
+      }
       
-      if(item[communityUserSelect]) {       
+      if(item[communityUserSelect] && tdd <= ddd && tmm <= dmm) {
+        
+        drivesFound = true
         
         $('#one').append('<a class="col-lg-6 tab-title"onclick=driveSelect(event) title="'+item[communityUserSelect].driveName+'">' + item[communityUserSelect].date + '</a>')               
 
         $('#one').append('<a class="col-lg-6 tab-title"onclick=driveSelect(event) title="'+item[communityUserSelect].driveName+'">'+ item[communityUserSelect].driveName +  '</a>') 
                         
-      }
+      }      
     }
+    if(!drivesFound) {
+        $('#one').append('<p class="col-lg-6 tab-title"onclick=driveSelect(event)>'+ "No Drives Found" +  '</p>') 
+      }
   }
 
   function driveSelect(e) {
