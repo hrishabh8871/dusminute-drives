@@ -3,9 +3,711 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+   margin: 0px;
+   padding: 0px;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: open sans !important;
+}
+
+html, html a {
+   text-shadow: 1px 1px 1px rgba(0,0,0,.004) !important;
+}
+html {
+   font-size: 10px;
+   scroll-behavior: smooth;
+}
+html {
+   font-family: sans-serif;
+   -webkit-text-size-adjust: 100%;
+}
+
+
+/* gmc first section */
+
+section.gmc-first-section, section.contact-section, section.gmc-additional-benefit {
+   background: #fff;
+}
+section.gmc-first-section {
+   padding: 20px 0 40px;
+   min-height: 570px;
+}
+
+/* bold heading */
+
+.bold-heading2 {
+   color: #333;
+   font-weight: 700;
+   text-align: center;
+   line-height: 46px;
+   width: 100%;
+   font-size: 30pt;
+}
+
+/* explore btn */
+
+.explore-pkg-btn {
+   background-color: #333;
+   color: #fff;
+   padding: 10px 20px;
+   border: none;
+   width: 40%;
+   border-radius: 4px;
+   cursor: pointer;
+   margin-top: 10px;
+   display: inline-block;
+   font-size: 16px;
+   box-shadow: -1px 4px 8px 0 rgba(0,0,0,.34);
+   text-transform: uppercase;
+}
+
+/* green color */
+
+.green-color {
+   color: #3fb661;
+}
+
+.customize-tools ul li {
+   list-style: none;
+   z-index: 1;
+   margin-top: -5%;
+}
+
+.cards {
+   -webkit-transition: all .2s;
+   transition: all .2s;
+   padding: 20px 29px;
+   background: #fff;
+   margin: 0 auto;
+   color: grey;
+   text-align: center;
+   border-bottom: 3px solid transparent;
+   height: 100%;
+   width: 90%;
+}
+
+/* How drive work */
+
+section.how-work {
+   padding: 40px 20px 50px;
+   background: #f8fafc;
+}
+
+.home-h2 {
+   padding-top: 7px;
+   text-align: center;
+   font-family: montserrat,sans-serif;
+   font-size: 26px;
+   font-weight: 600;
+   text-align: center;
+   margin: 10px;
+}
+
+.home-h2-1 {
+   padding-top: 30px;
+   text-align: center;
+   font-family: montserrat,sans-serif;
+   font-size: 30px;
+   font-weight: 600;
+   text-align: left;
+}
+
+.section-header-underline {
+   width: 55px;
+   background: #4f4f4f;
+   border-radius: 5px;
+   border: 1px solid #4f4f4f;
+   padding: 1px;
+   transform: translate(-50%,-50%);
+   left: 50%;
+   position: relative;
+   top: 13px;
+}
+
+/* select community */
+
+.know_section {
+   padding: 1.5em 5em 0;
+   background-color: #384861;
+}
+
+.know_image {
+   width: 115%;
+   margin: auto;
+}
+
+.know_text {
+   margin-top: 30px;
+}
+
+.dark-btn-lg {
+   width: 100%;
+   font-size: 13px;
+   font-weight: 700;
+   text-transform: uppercase;
+   padding: 13px 0;
+   margin-bottom: 10px;
+   border-radius: 30px;
+   border: none;
+   color: #fff;
+   background-color: #1f2935;
+   box-shadow: 3px 2px 10px 1px #1f2935;
+}
+
+.know_text_head {
+   padding-top: 7px;
+   text-align: left;
+   font-size: 26px;
+   font-weight: 600;
+   color: #fff;
+}
+
+.know_text_subhead {
+   font-size: 17px;
+   padding-top: 7px;
+   text-align: left;
+   font-weight: 400;
+   margin: 5px 0 40px;
+   color: #fff;
+}
+
+/* Booking section */
+
+section.service-second-section {
+   min-height: 520px;
+}
+
+.back-blue {
+   background: #384861;
+   height: 300px;
+}
+
+.heading {
+   font-size: 30px;
+   margin-top: 0;
+}
+
+.white {
+   color: #fff;
+}
+
+.gmc-white-box {
+   width: 85%;
+   top: 2px;
+   background: 0 0;
+   position: relative;
+   display: block;
+   z-index: 2;
+   border-radius: 5px 5px 16px 16px;
+   margin: 0 auto;
+   bottom: 100px;
+   box-shadow: 0 26px 64px 0 rgba(0,0,0,.2);
+   -moz-box-shadow: 0 26px 64px 0 rgba(0,0,0,.2);
+   -webkit-box-shadow: 0 26px 64px 0 rgba(0,0,0,.2);
+}
+
+.col-heading-box {
+   border-radius: 16px;
+   border: 1px solid #86a7cf;
+   margin: 0;
+}
+
+.services-list-box {
+   background: #f8fafc;
+   border-radius: 0 0 16px 16px;
+}
+
+.services-list-items {
+   border-right: 1px solid #86a7cf;
+}
+
+.append-box {
+   padding: 0;
+   border-top: 1px solid #86a7cf !important;
+}
+
+.modal-list-items-box {
+   background: #ecf1f6;
+   padding: 10px;
+   border-radius: 16px 16px 0 0;
+   font-weight: 600;
+}
+
+.tabs-container {
+   min-height: 400px;
+   text-align: center;
+}
+
+.tab-title {
+   display: block;
+   padding: 18px;
+   border-top: 1px solid #86a7cf;
+   color: #111;
+   font-size: 14px;
+   font-weight: 700;
+}
+.tab {
+   width: 30%;
+}
+
+.marg-left {
+   margin-left: 5px;
+}
+
+.tab-content {
+   position: absolute;
+   top: 0;
+   right: 0;
+   width: 70%;
+   border-left: 1px solid #86a7cf;
+   min-height: 100%;
+   overflow-y: auto;
+      
+}
+
+.tab.active {
+    background: #c4dbf6;
+}
+
+.tab.active + .tab-content {
+   display: block;
+}
+
+.date_time_feature {
+   margin-top: 20px;
+   border-top: 1px solid rgba(134,167,207,.3);
+   padding-top: 20px;
+}
+
+.date_time_feature {
+   display: inline-block;
+   width: 100%;
+}
+
+.date_time_feature .booking_datetime_heading {
+   text-align: left;
+}
+
+.booking_datetime_heading {
+   font-size: 15px;
+   text-align: center;
+   font-weight: 500;
+   margin-bottom: 15px;
+   display: flex;
+   justify-content: center;
+}
+
+.date_time_feature ul {
+   padding-left: 20px;
+}
+
+.delete-item {
+   width: 16px;
+   position: absolute;
+   right: 0;
+   height: 16px;
+   line-height: 16px;
+   background: #333;
+   color: #fff;
+   padding: 0;
+   text-align: center;
+   margin-top: 7px;
+   border-radius: 33px;
+   font-size: 11px;
+   cursor: pointer;
+}
+
+.added h4 {
+   font-size: 14px !important;
+   font-weight: 700;
+}
+
+#append {
+   max-height: 320px;
+   overflow-y: scroll;
+}
+
+#serviceCartItem {
+   max-height: 320px;
+   overflow-y: scroll;
+}
+
+.booking_datetime_heading {
+   font-size: 15px;
+   text-align: center;
+   font-weight: 500;
+   margin-bottom: 15px;
+   display: flex;
+   justify-content: center;
+}
+
+#dest {
+   border: none;
+   background: 0 0;
+   font-weight: 600;
+   width: 30px;
+   text-align: center;
+}
+
+.book-service-btn {
+   background-color: #333;
+   color: #fff;
+   padding: 10px 20px;
+   border: none;
+   width: 80%;
+   margin: 10px auto;
+   border-radius: 4px;
+   cursor: pointer;
+}
+
+.append-mob-heading {
+   display: none;
+}
+
+/* footer */
+
+.footer-main-container {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.footerleft {
+   margin-top: 10px;
+   padding: 0 38px;
+}
+
+.footer-right {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   padding-left: 30px;
+}
+
+.footer-right > div {
+   width: 30%;
+   padding: 0 !important;
+}
+
+.footer-ul {
+   list-style-type: none;
+   padding-left: 0;
+}
+
+.heading7 {
+   font-size: 15px;
+   font-weight: 600;
+   line-height: 20px;
+   color: #111;
+   margin-bottom: 8px;
+}
+
+.social {
+   list-style-type: none;
+   margin-bottom: 0;
+   margin-top: 10px;
+}
+
+.footer-main-container {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.paddingtop-bottom {
+   margin-top: 10px;
+}
+
+.footer-ul li a {
+   color: #52636b;
+   font-size: 12px;
+}
+
+/* copyright */
+
+.copyright {
+   min-height: 40px;
+   background-color: #000;
+   padding: 2px 0;
+}
+
+.copyright-box, .other-links, .social-links {
+   padding: 0 !important;
+   padding-right: 0px;
+   padding-right: 0 !important;
+}
+
+.copyright p {
+   text-align: left;
+   color: #fff;
+   padding: 10px 0;
+   margin-bottom: 0;
+   font-size: 12px;
+}
+
+/* @media only screen and (max-device-width:414px) {
+   footer {
+      margin-top: 150%;
+   }
+} */
+
+/* Model css */
+
+ .form-style-5{
+	max-width: 500px;
+	padding: 10px 20px;
+	background: #f4f7f8;
+	margin: 10px auto;
+	padding: 20px;
+	background: #f4f7f8;
+	border-radius: 8px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+}
+.form-style-5 fieldset{
+	border: none;
+} 
+ .form-style-5 legend {
+	font-size: 1.4em;
+	margin-bottom: 10px;
+}
+.form-style-5 label {
+	display: block;
+	margin-bottom: 8px;
+}
+.form-style-5 input[type="text"],
+.form-style-5 input[type="date"],
+.form-style-5 input[type="datetime"],
+.form-style-5 input[type="email"],
+.form-style-5 input[type="number"],
+.form-style-5 input[type="search"],
+.form-style-5 input[type="time"],
+.form-style-5 input[type="url"],
+.form-style-5 textarea,
+.form-style-5 select {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: rgba(255,255,255,.1);
+	border: none;
+	border-radius: 4px;
+	font-size: 15px;
+	margin: 0;
+	outline: 0;
+	padding: 10px;
+	width: 100%;
+	box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	background-color: #e8eeef;
+	color:#8a97a0;
+	-webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+	margin-bottom: 30px;
+}
+.form-style-5 input[type="text"]:focus,
+.form-style-5 input[type="date"]:focus,
+.form-style-5 input[type="datetime"]:focus,
+.form-style-5 input[type="email"]:focus,
+.form-style-5 input[type="number"]:focus,
+.form-style-5 input[type="search"]:focus,
+.form-style-5 input[type="time"]:focus,
+.form-style-5 input[type="url"]:focus,
+.form-style-5 textarea:focus,
+.form-style-5 select:focus{
+	background: #d2d9dd;
+}
+.form-style-5 select{
+	-webkit-appearance: menulist-button;
+	height:35px;
+}
+.form-style-5 .number {
+	background: #1abc9c;
+	color: #fff;
+	height: 30px;
+	width: 30px;
+	display: inline-block;
+	font-size: 0.8em;
+	margin-right: 4px;
+	line-height: 30px;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+	border-radius: 15px 15px 15px 0px;
+}
+
+.form-style-5 input[type="submit"],
+.form-style-5 input[type="button"],
+.form-style-5 button
+{
+	position: relative;
+	display: block;
+	padding: 19px 39px 18px 39px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #1abc9c;
+	font-size: 18px;
+	text-align: center;
+	font-style: normal;
+	width: 100%;
+	border: 1px solid #16a085;
+	border-width: 1px 1px 3px;
+	margin-bottom: 10px;
+}
+.form-style-5 input[type="submit"]:hover,
+.form-style-5 input[type="button"]:hover
+{
+	background: #109177;
+}
+
+.closeModel {
+	position: relative;
+	display: block;
+	padding: 15px 30px 15px 30px;
+	color: #FFF;
+	margin: 0 auto;
+	background: #1abc9c;
+	/* font-size: 18px; */
+	text-align: center;
+	font-style: normal;
+	/* width: 100%; */
+	border: 1px solid #16a085;
+	border-width: 1px 1px 3px;
+	/* margin-bottom: 10px; */
+}
+
+.no-arrow {
+   -moz-appearance: textfield;
+ }
+ .no-arrow::-webkit-inner-spin-button {
+   display: none;
+ }
+ .no-arrow::-webkit-outer-spin-button,
+ .no-arrow::-webkit-inner-spin-button {
+   -webkit-appearance: none;
+   margin: 0;
+ }
+
+ /* Explore services */
+
+ .home-h2 {
+   padding-top: 7px;
+   text-align: center;
+   font-family: montserrat,sans-serif;
+   font-size: 26px;
+   font-weight: 600;
+   text-align: center;
+   margin: 10px;
+}
+
+.section-header-underline {
+   width: 55px;
+   background: #4f4f4f;
+   border-radius: 5px;
+   border: 1px solid #4f4f4f;
+   padding: 1px;
+   transform: translate(-50%,-50%);
+   left: 50%;
+   position: relative;
+   top: 13px;
+}
+
+.servc-container-box {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   text-align: center;
+}
+
+.servc-container-box > div {
+   margin: 15px 0;
+}
+
+.width-20-top {
+   width: 16.8% !important;
+}
+
+#card-1 #img {
+   background-image: url(https://drive.google.com/uc?id=1qEqwlbNjhDRvWpOYDOJb4yDTv8VABdxE);
+}
+
+#card-2 #img {
+   background-image: url(https://drive.google.com/uc?id=1cj0HCdtgopsLXK7kIsenVluIfbEkHPBE);
+}
+
+#card-3 #img {
+   background-image: url(https://drive.google.com/uc?id=1olUcLYoGpC7OZxVCnYB5mme3qzJtaKA5);
+}
+
+#card-4 #img {
+   background-image: url(https://drive.google.com/uc?id=1pyHBUQ5_rF4RqYpevnkpKJj0Xr2EBnqZ);
+}
+
+#card-5 #img {
+   background-image: url(https://drive.google.com/uc?id=1rE3YmfhZ3tSAj1va-HlhpjFlZtFaS6t5);
+}
+
+#card-6 #img {
+   background-image: url(https://drive.google.com/uc?id=1egAC8BlY0zhcW2brjt8GeiLGqhS7Byq0);
+}
+
+#card-7 #img {
+   background-image: url(https://drive.google.com/uc?id=1NRCktX7uU-EAZmKhhXbCPhbtV5K9VbWD);
+}
+
+#card-8 #img {
+   background-image: url(https://drive.google.com/uc?id=1TugPDjd70nlyQN3JaerHA7LvAEIEb8uI);
+}
+
+#card-9 #img {
+   background-image: url(https://drive.google.com/uc?id=1RhLPx5bgflaHkoV_TQu4n4MlIh1VkZ9c);
+}
+
+#card-10 #img {
+   background-image: url(https://drive.google.com/uc?id=1O5LGOcHMviEy0Ks8289nvqUMSjJIpMM3);
+}
+
+#card-11 #img {
+   background-image: url(https://drive.google.com/uc?id=1p-I3Cw-UhyH0gPwLxVGP9FxfDePmyWkx);
+}
+
+#img {
+   height: 56px;
+   width: 56px;
+   margin: 0 auto;
+   background-size: cover;
+   pointer-events: none;
+   position: relative;
+   display: block;
+}
+
+a {
+   text-decoration: none !important;
+   cursor: pointer;
+   color: #337ab7;
+}
+
+a:active, a:hover {
+   outline: 0;
+}
+
+.cards2 {
+   box-shadow: 0 8px 12px -1px rgba(0,0,0,.1);
+   -webkit-box-shadow: 0 8px 12px -1px rgba(0,0,0,.1);
+   -moz-box-shadow: 0 8px 12px -1px rgba(0,0,0,.1);
+   padding: 15px 10px;
+   background: #fff;
+   margin: 0 auto;
+   color: grey;
+   border-bottom: 2px solid #3fb661;
+   text-align: center;
+   border-radius: 4px;
+   display: block;
+   height: 100%;
+   min-height: 160px;
+}
+  </style>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="./index.css" media="screen"/>
+  <!-- <link rel="stylesheet" type="text/css" href="./index.css" media="screen"/> -->
   <!-- CSS only --><!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script> -->
@@ -241,7 +943,7 @@
               <div class="col-md-12 padding-0 services-list-box">
                 <div class="col-md-9 padding-0 services-list-items">
                   <div class="tabs-container">
-                    <div class="tab active row append" id="one">                      
+                    <div class="tab row append" id="one">                      
                         
                         <!-- <a class="col-lg-6 tab-title">
                           06-July-2020
@@ -576,7 +1278,7 @@
 var drives = [
     {
       AdarshPalmRetreat: {
-        date: '07-July-2020',
+        date: '08-July-2020',
         driveName: 'Carpet Cleaning',
         description: 'This is a drive of adarsh palm retreat',
         notes: 'This is a notes',
@@ -589,8 +1291,8 @@ var drives = [
     },
     {
       AdarshPalmRetreat: {
-        date: '07-July-2020',
-        driveName: 'Bathroom Cleaning',
+        date: '08-July-2020',
+        driveName: 'Bath Cleaning',
         description: 'This is a drive of adarsh palm retreat',
         notes: 'This is a notes',
         size: [
@@ -602,7 +1304,7 @@ var drives = [
     },
     {
       BrigadeCosmopolis: {
-        date: '07-July-2020',
+        date: '08-July-2020',
         driveName: 'Sofa Cleaning',
         description: 'This is a drive of bridage cosmoplis',
         notes: 'This is a notes',
@@ -615,7 +1317,7 @@ var drives = [
     },
     {
       BrigadeCosmopolis: {
-        date: '07-July-2020',
+        date: '08-July-2020',
         driveName: 'Flies Cleaning',
         description: 'This is a drive of bridage cosmoplis',
         notes: 'This is a notes',
@@ -705,8 +1407,7 @@ var drives = [
 
     var drivesFound = false
 
-      var today = new Date()
-      var driveDate = new Date('07-July-2020')
+      var today = new Date()      
       var tdd = String(today.getDate()).padStart(2, '0');
       var tmm = String(today.getMonth() + 1).padStart(2, '0');
 
@@ -723,21 +1424,53 @@ var drives = [
         
         drivesFound = true
         
-        $('#one').append('<a class="col-lg-6 tab-title"onclick=driveSelect(event) title="'+item[communityUserSelect].driveName+'">' + item[communityUserSelect].date + '</a>')               
+        $('#one').append('<a id="date,'+ communityUserSelect + item[communityUserSelect].driveName +'" class="col-lg-6 tab-title tab" onclick=driveSelect(event) title="'+item[communityUserSelect].driveName+'">' + item[communityUserSelect].date + '</a>')               
 
-        $('#one').append('<a class="col-lg-6 tab-title"onclick=driveSelect(event) title="'+item[communityUserSelect].driveName+'">'+ item[communityUserSelect].driveName +  '</a>') 
+        $('#one').append('<a id="drive,'+ communityUserSelect + item[communityUserSelect].driveName +'" class="col-lg-6 tab-title tab" onclick=driveSelect(event) title="'+item[communityUserSelect].driveName+'">'+ item[communityUserSelect].driveName +  '</a>') 
                         
       }      
     }
     if(!drivesFound) {
-        $('#one').append('<p class="col-lg-6 tab-title"onclick=driveSelect(event)>'+ "No Drives Found" +  '</p>') 
+        $('#one').append('<p class="col-lg-6 tab-title active "onclick=driveSelect(event)>'+ "No Drives Found" +  '</p>') 
       }
   }
 
   function driveSelect(e) {
 
     removeChild('tbody')        
-    title = e.target.title   
+    title = e.target.title
+
+    document.querySelectorAll('#one *').forEach(element => {
+      element.removeAttribute('class');
+    });    
+
+    document.querySelectorAll('#one *').forEach(element => {
+      element.setAttribute('class', "col-lg-6 tab-title");
+    });
+
+    var dateDrive = (e.target.id).split(',')
+
+    var drive = 'drive,' + dateDrive[1]
+
+    var date = 'date,' + dateDrive[1]
+
+    console.log(drive, date, e.target.id)
+
+    if(dateDrive[0] === 'date') {
+      var selectDrive = document.getElementById(drive)
+
+      selectDrive.setAttribute('class', "tab active col-lg-6 tab-title")
+    }
+
+    if(dateDrive[0] === 'drive') {
+      var selectDrive = document.getElementById(date)
+
+      selectDrive.setAttribute('class', "tab active col-lg-6 tab-title")
+    }
+
+    var selectDrive = document.getElementById(e.target.id)
+
+    selectDrive.setAttribute('class', "tab active col-lg-6 tab-title")       
 
     var communityUserSelect = document.getElementById('community').value  
 
