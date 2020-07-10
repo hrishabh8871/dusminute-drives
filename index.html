@@ -74,7 +74,7 @@ section.gmc-first-section {
 .customize-tools ul li {
    list-style: none;
    z-index: 1;
-   margin-top: -5%;
+   /* margin-top: -0%; */
 }
 
 .cards {
@@ -329,6 +329,11 @@ section.service-second-section {
 #append {
    max-height: 320px;
    overflow-y: scroll;
+}
+
+.driveTabs {
+  max-height: 320px;
+  overflow-y: scroll
 }
 
 #serviceCartItem {
@@ -756,10 +761,10 @@ a:active, a:hover {
     <section class="gmc-first-section">
       <div class="container">
       <div class="col-md-6 margin-top-50">
-      <h1 class="bold-heading2">DusMinute mega drives
-      <strong class="green-color">Service event for your community</strong></h1>
+      <h1 class="bold-heading2">DusMinute Mega Savings
+      <strong class="green-color">Service Drives for your community</strong></h1>
       <div class="col-md-12 explore-pkg-btn-box col-xs-12 text-center margin-top-20">
-      <a href="#driveSection" class="explore-pkg-btn">Book Drives</a>
+      <a href="#driveSection" class="explore-pkg-btn">Book Services</a>
       </div>
       </div>
       <div class="col-md-6">
@@ -770,35 +775,61 @@ a:active, a:hover {
 
       <!-- feature -->
 
-      <div class="container mob-container padding-0">
+      <div class="container mob-container padding-0">        
         <div class="customize-tools">
+          <h2 class="home-h2">Why subscriber for services drives?
+            <h3 style="margin-top: -0.3%;" class="text-muted text-center">Services drives concept is similar to "Group Buying" of quality services at significantly reduced prices for the limited period            
+            </h3>
+            <div style="margin-top: -1%;" class="section-header-underline"></div>
+          </h2>          
           <ul class="ul-border col-md-12 col-sm-12 submenu-toggle home-slider-nav">
             <li class="col-md-3 ul-list col-sm-12">
               <div class="cards">
                 <img alt="Verified professionals" id="first1" src="./assest/organization.svg" height="45px">
-                <p>One-stop maintenance <br>&amp; execution partner</p>
+                <p>Upto 60% Savings <br></p>
               </div>
             </li>
             <li class="col-md-3 col-sm-12">
               <div class="cards">
                 <img alt="Gapoon Warranty" src="./assest/accounting.svg" height="45px">
-                <p>Highly trained in-house professionals</p>
+                <p>Exclusive events for selected community</p>
               </div>
             </li>
             <li class="col-md-3 col-sm-12">
               <div class="cards">
                 <img alt="Quick Resolution" src="./assest/shield.svg" height="45px">
-                <p>100% service<br> warranty</p>
+                <p>Upto 90 days service<br> warranty</p>
               </div>
             </li>
             <li class="col-md-3 col-sm-12">
               <div class="cards">
                 <img alt="Intelligent algorithm" src="./assest/trust.svg" height="45px">
-                <p>Dedicated relationship manager</p>
+                <p>One stop home maintenance services</p>
               </div>
             </li>
-            <li>
+            <li class="col-md-3 col-sm-12">
+              <div class="cards">
+                <img alt="Intelligent algorithm" src="./assest/trust.svg" height="45px">
+                <p>Dedicated experts team</p>
+              </div>
+            </li>             
+            <li class="col-md-3 col-sm-12">
+              <div class="cards">
+                <img alt="Intelligent algorithm" src="./assest/trust.svg" height="45px">
+                <p>Dedicated relationship manager</p>
+              </div>
+              <li class="col-md-3 col-sm-12">
+                <div class="cards">
+                  <img alt="Intelligent algorithm" src="./assest/trust.svg" height="45px">
+                  <p>Covid-19 safety Measures ensured</p>
+                </div>
             </li>
+            <li class="col-md-3 col-sm-12">
+              <div class="cards">
+                <img alt="Intelligent algorithm" src="./assest/trust.svg" height="45px">
+                <p>Accidental damaged warrenty</p>
+              </div>
+          </li> 
           </ul>
         </div>
       </div>
@@ -807,7 +838,7 @@ a:active, a:hover {
 
       <section class="how-work">
         <div class="container-1 text-center">
-          <h2 class="home-h2">How Drive Work
+          <h2 class="home-h2">How it works
             <div class="section-header-underline"></div>
           </h2>
           <div class="row margin-top-40">
@@ -820,8 +851,8 @@ a:active, a:hover {
                     <div class="cards-padding">
                       <img class="cards-img" alt="Verified professionals" id="first1"
                         src="https://www.gapoon.com/assets/images/home-page/how-work-2.svg" height="90px">
-                      <p>Choose the best-suited package <br>for your business</p>
-                      <span class="card-p">A comprehensive set of services for one-stop execution</span>
+                      <p class="h3">Choose the events for <br/>your community</p>
+                      <span class="card-p text-mute h4">Select the services required</span>
                     </div>
                   </div>
                 </li>
@@ -830,8 +861,8 @@ a:active, a:hover {
                   <div class="cards">
                     <div class="cards-padding">
                       <img class="cards-img" alt="Gapoon Warranty" src="https://www.gapoon.com/assets/images/home-page/how-work-1.svg" height="90px">
-                      <p>Enjoy periodic maintenance at no <br>additional service cost</p>
-                      <span class="card-p">Preventive audits, unlimited breakdowns with digital tracking &amp; updates</span>
+                      <p class="h3">Choose your preffered <br/>time slot</p>
+                      <span class="card-p h4">We service from 9am to 8pm</span>
                     </div>
                   </div>
                 </li>
@@ -840,8 +871,8 @@ a:active, a:hover {
                     <div class="cards-padding">
                       <img class="cards-img" alt="Quick Resolution" src="https://www.gapoon.com/assets/images/home-page/how-work-3.svg"
                         height="90px">
-                      <p>Get 100% warranty <br>for all services</p>
-                      <span class="card-p">SLA based guarantee on all properties with dedicated client support</span>
+                      <p class="h3">Enjoy Hassel-free service</p>
+                      <span class="card-p h4">Our professionals will contact you, two hours before the service</span>
                     </div>
                   </div>
                 </li>
@@ -868,14 +899,14 @@ a:active, a:hover {
               <div class="get_quote-1" style="">
                 <div class="know_text">
                   <div class="know_text_head">
-                    <h2 class="home-h2-1">Focus on your business while <br> DusMinute maintains your property</h2>
+                    <h2 class="home-h2-1">Find Upcoming Events in your Community</h2>
                   </div>
-                  <div class="know_text_subhead">
+                  <!-- <div class="know_text_subhead">
                     <p>Ensure optimal lifecycle management of properties with our <br> unique subscription offerings</p>
-                  </div>
+                  </div> -->
                 </div>
                 <div class="know_buttons row">
-                  <div class="col-xs-12 col-sm-4 col-md-4">
+                  <div style="margin-top: 5%" class="col-xs-12 col-sm-4 col-md-4">
                     <select id="community" onclick="selectCommunity(value)" class="dark-btn-lg animate bounce quote-btn w-50">
                       <option value='null'>Select your community</option>                      
                       <option value="AdarshPalmRetreat">Adarsh Palm Retreat</option>
@@ -914,7 +945,7 @@ a:active, a:hover {
 
       <div class="container-fluid padding-0">
         <div class="back-blue">
-          <h4 class="heading white text-center padding-30">Book Mega Service Event</h4>
+          <h4 class="heading white text-center padding-30">Book Mega Savings Services Drives</h4>
           <div class="gmc-white-box">
             <div class="row padding-0 col-heading-box">
               <div class="col-md-12 col-heading modal-list-items-box">
@@ -931,11 +962,11 @@ a:active, a:hover {
                   Slot
                 </div>
                 <div class="col-md-1">
-                  Select
+                  <!-- Price -->
                 </div>
                 <div class="col-md-1">
-                  Notes
-                </div>
+                  Select
+                </div>                
                 <div class="col-md-3">
                   Selected Items
                 </div>
@@ -943,7 +974,7 @@ a:active, a:hover {
               <div class="col-md-12 padding-0 services-list-box">
                 <div class="col-md-9 padding-0 services-list-items">
                   <div class="tabs-container">
-                    <div class="tab row append" id="one">                      
+                    <div class="tab row append driveTabs" id="one">                      
                         
                         <!-- <a class="col-lg-6 tab-title">
                           06-July-2020
@@ -989,11 +1020,11 @@ a:active, a:hover {
                       <div class="date_time_feature margin-top-0 col-md-12">
                         <div class="green-color booking_datetime_heading text-left justify-left">Notes <img class="marg-left"
                             src="https://www.gapoon.com/assets/images/service-page/done.svg" height="20"></div>
-                        <ul class="text-left">
-                          <li>Visiting Charges of Rs. 99/- is applicable if no service is availed.</li>
+                        <ul class="text-left" id="driveNotes">
+                          <!-- <li>Visiting Charges of Rs. 99/- is applicable if no service is availed.</li>
                           <li>Minimum service charge is Rs.250.</li>
                           <li>Prices includes labour charges only. Any material requirement will be extra &amp; charged as
-                            actuals</li>
+                            actuals</li> -->
                         </ul>
                       </div>
                     </div>
@@ -1278,53 +1309,4306 @@ a:active, a:hover {
 var drives = [
     {
       AdarshPalmRetreat: {
-        date: '08-July-2020',
-        driveName: 'Carpet Cleaning',
+        date: '10-July-2020',
+        driveName: 'Pest Control',
         description: 'This is a drive of adarsh palm retreat',
         notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
         size: [
-          { '1bhk': 200 },
-          { '2bhk': 300 },
-          { '3bhk': 350 },
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+      "05:00 PM – 05:45 PM",
+    "05:45 PM – 06:30 PM",
         ]
       },
     },
+    {
+      BrigadeCosmopolis: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeLakefront: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeMeadows: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeOmega: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadePanorama: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      DivyasreeRepublicofWhitefield: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      GMInfinite: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      GodrejEcity: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      PrestigeLakeside: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      PrestigeSunrisePark: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      ProvidentSunworth: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      RamkyOneNorth: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SalarpuriaGreenage: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      ShriramSummitt: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SNNRajGreenbay: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SNNRajEtternia: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SobhaDreamAcres: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },    
+    {
+      SobhaSiliconOasis: {
+        date: '10-July-2020',
+        driveName: 'Pest Control',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'General Pest Control, we use combination of spray & get baiting for effective disinfection against cockroaches, ants, spiders, & crawling insects',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 700 },
+          { '2 BHK': 750 },
+          { '3 BHK': 800 },
+          { '4 BHK': 900 },
+          { 'Disinfection & Sanitization': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    
+    
+
+
+
+
+
+
     {
       AdarshPalmRetreat: {
-        date: '08-July-2020',
-        driveName: 'Bath Cleaning',
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
         description: 'This is a drive of adarsh palm retreat',
         notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
         size: [
-          { '1bhk': 200 },
-          { '2bhk': 300 },
-          { '3bhk': 350 },
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
         ]
       },
     },
     {
       BrigadeCosmopolis: {
-        date: '08-July-2020',
-        driveName: 'Sofa Cleaning',
-        description: 'This is a drive of bridage cosmoplis',
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
         notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
         size: [
-          { '1bhk': 200 },
-          { '2bhk': 300 },
-          { '3bhk': 350 },
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeLakefront: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeMeadows: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeOmega: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadePanorama: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      DivyasreeRepublicofWhitefield: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      GMInfinite: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      GodrejEcity: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      PrestigeLakeside: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      PrestigeSunrisePark: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      ProvidentSunworth: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      RamkyOneNorth: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SalarpuriaGreenage: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      ShriramSummitt: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SNNRajGreenbay: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SNNRajEtternia: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SobhaDreamAcres: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },    
+    {
+      SobhaSiliconOasis: {
+        date: '10-July-2020',
+        driveName: 'Bathroom Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes the cleaning of wall & floor tiles, Descaling from all taps, faucets & shower heads, WC, washbasin & mirrors, exhaust fan, door & window.',
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 Bathroom': 500 },
+          { '2 Bathroom': 800 },
+          { '3 Bathroom': 1200 },
+          { '4 Bathroom': 1600 },
+          {  'Fans & Lights Fixtures Cleaning': 250 },
+          {  'Kitchen Cleaning': 700 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+
+
+
+
+
+
+
+
+    {
+      AdarshPalmRetreat: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
         ]
       },
     },
     {
       BrigadeCosmopolis: {
-        date: '08-July-2020',
-        driveName: 'Flies Cleaning',
-        description: 'This is a drive of bridage cosmoplis',
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
         notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
         size: [
-          { '1bhk': 200 },
-          { '2bhk': 300 },
-          { '3bhk': 350 },
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeLakefront: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeMeadows: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeOmega: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadePanorama: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      DivyasreeRepublicofWhitefield: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      GMInfinite: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      GodrejEcity: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      PrestigeLakeside: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      PrestigeSunrisePark: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      ProvidentSunworth: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      RamkyOneNorth: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SalarpuriaGreenage: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      ShriramSummitt: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SNNRajGreenbay: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SNNRajEtternia: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SobhaDreamAcres: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },    
+    {
+      SobhaSiliconOasis: {
+        date: '10-July-2020',
+        driveName: 'Sofa & Carpet Shampooing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dry Vacuum to extract loose dust, Applications of chemical Foam & Scrubbing & Wet Vacuuming to extract moisture & residual dirt',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Min Service Charge is INR 400/-',
+        size: [
+          { 'Sofa per seat': 200 },
+          { 'Carpet (Upto 40 sqft)': 300 },
+          { 'Chair': 75 },          
+          { 'Single Mattress': 200 },
+          { 'Double Mattress': 400 },
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+
+
+
+
+
+
+
+
+
+
+    {
+      AdarshPalmRetreat: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeCosmopolis: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeLakefront: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeMeadows: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeOmega: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadePanorama: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      DivyasreeRepublicofWhitefield: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      GMInfinite: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      GodrejEcity: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      PrestigeLakeside: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      PrestigeSunrisePark: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      ProvidentSunworth: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      RamkyOneNorth: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SalarpuriaGreenage: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      ShriramSummitt: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SNNRajGreenbay: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SNNRajEtternia: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SobhaDreamAcres: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },    
+    {
+      SobhaSiliconOasis: {
+        date: '10-July-2020',
+        driveName: 'AC Detailed Servicing',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes end to end cleaning of your AC, Cooling coils, condenser coils, outer panel, drain and filet pipes',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 AC': 500 },
+          { '2 ACs': 900 },
+          { '3 ACs': 1200 },          
+          { '4 ACs': 1600 },          
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      AdarshPalmRetreat: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeCosmopolis: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeLakefront: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeMeadows: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeOmega: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadePanorama: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      DivyasreeRepublicofWhitefield: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      GMInfinite: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      GodrejEcity: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      PrestigeLakeside: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      PrestigeSunrisePark: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      ProvidentSunworth: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      RamkyOneNorth: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SalarpuriaGreenage: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      ShriramSummitt: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SNNRajGreenbay: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SNNRajEtternia: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SobhaDreamAcres: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },    
+    {
+      SobhaSiliconOasis: {
+        date: '10-July-2020',
+        driveName: 'Hob & Chimney Deep Cleaning',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes Dismantling of chimney. Cleaning of Gas Burners, Mesh filter, Fan motor, PCB Switches, Interior & Exterior Surface of Chimney, Reinstallation of machine after service',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Hob & Chimeny Deep Cleaning': 800 },
+          { 'Kitchen sink cleaning': 300 },                   
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      AdarshPalmRetreat: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeCosmopolis: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeLakefront: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeMeadows: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeOmega: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadePanorama: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      DivyasreeRepublicofWhitefield: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      GMInfinite: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      GodrejEcity: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      PrestigeLakeside: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      PrestigeSunrisePark: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      ProvidentSunworth: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      RamkyOneNorth: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      SalarpuriaGreenage: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      ShriramSummitt: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      SNNRajGreenbay: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      SNNRajEtternia: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+    {
+      SobhaDreamAcres: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },    
+    {
+      SobhaSiliconOasis: {
+        date: '10-July-2020',
+        driveName: 'Interiors Painting Drive',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes furniture covering for workplace,  Touch-up Putty if required, Painting of the wall with the same brand and colour code, & final cleaning of the workplace',        
+        notes2: 'All COVID-19 safty measured are followed',
+        notes3: 'Maximum area served is 300 Sq Ft (Up to 3 Walls)',
+        size: [
+          { 'Interiors Painting Drive': 2500 },                             
+        ],
+        slot: [
+          "9:00 AM - 11:00 AM",
+          "11:30 AM - 01:00 PM",
+          "02:00 AM - 04:00 PM",
+          "04:30 AM - 06:30 PM",
+        ]
+      },
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      AdarshPalmRetreat: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      BrigadeCosmopolis: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      BrigadeLakefront: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      BrigadeMeadows: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      BrigadeOmega: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      BrigadePanorama: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      DivyasreeRepublicofWhitefield: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      GMInfinite: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      GodrejEcity: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      PrestigeLakeside: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      PrestigeSunrisePark: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      ProvidentSunworth: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      RamkyOneNorth: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      SalarpuriaGreenage: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      ShriramSummitt: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      SNNRajGreenbay: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      SNNRajEtternia: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+    {
+      SobhaDreamAcres: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },    
+    {
+      SobhaSiliconOasis: {
+        date: '10-July-2020',
+        driveName: 'Move IN/OUT Package',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house painting & cleaning. Entire house maintenance repair works and Movers & Packers upgrade options are available',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { '1 BHK': 8500 },
+          { '2 BHK': 13000 },
+          { '3 BHK': 18000 },
+          { '4 BHK': 'Up on Inspection' },
+          { 'Add Movers & Packers @ 35% discount' : 'Up on Inspection' }                             
+        ],
+        slot: [
+          "9:00 AM – 01:30 PM",
+          "02:00 PM – 06:30 PM"
+        ]
+      },
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    {
+      AdarshPalmRetreat: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeCosmopolis: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeLakefront: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeMeadows: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadeOmega: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      BrigadePanorama: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      DivyasreeRepublicofWhitefield: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      GMInfinite: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      GodrejEcity: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      PrestigeLakeside: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      PrestigeSunrisePark: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      ProvidentSunworth: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      RamkyOneNorth: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SalarpuriaGreenage: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      ShriramSummitt: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SNNRajGreenbay: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SNNRajEtternia: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },
+    {
+      SobhaDreamAcres: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
+        ]
+      },
+    },    
+    {
+      SobhaSiliconOasis: {
+        date: '10-July-2020',
+        driveName: 'Full house maintenace audit',
+        description: 'This is a drive of adarsh palm retreat',
+        notes: 'This is a notes',
+        notes1: 'It includes full house plumbing, electrical & carpentry repairs.  ',        
+        notes2: 'All COVID-19 safty measured are followed',
+        size: [
+          { 'Full house maintenance checkup': 150 },
+          { 'Add Geyser Descaling': 150 },                                       
+        ],
+        slot: [
+          "9:30 AM – 10:00 AM",
+          "10:00 AM – 10:45 AM",
+          "10:45 AM – 11:30 AM",
+          "11:30 AM – 12:15 PM",
+          "12:15 PM – 01:00 PM",
+          "01:00 PM – 01:30 PM",
+          "02:00 PM – 02:45 PM",
+          "02:45 PM – 03:30 PM",
+          "03:30 PM – 04:15 PM",
+          "04:15 PM – 05:00 PM",
+          "05:00 PM – 05:45 PM",
+          "05:45 PM – 06:30 PM",
         ]
       },
     },
@@ -1354,7 +5638,7 @@ var drives = [
     removeChild('serviceCartItem')    
     var bookingData = e.target.attributes
     var validBookingData = true
-    if(slotBooked) {      
+    if(slotBooked && slotBooked !== 'null') {      
       if(booking.length > 0) {
         for(let bookingItem of booking) {
           if(bookingItem.community === bookingData[4].nodeValue && bookingItem.drive === bookingData[5].nodeValue) {
@@ -1384,13 +5668,21 @@ var drives = [
       // console.log(id)
       document.getElementById("booking" + bookingData[4].nodeValue + bookingData[5].nodeValue + bookingData[3].nodeValue).checked = false;      
     }
+
+    // console.log(!slotBooked && bookingData.length > 0 && !document.getElementById('serviceCartItem').hasChildNodes())
+
+    if(!slotBooked && bookingData.length > 0 && !document.getElementById('serviceCartItem').hasChildNodes()) {
+      for(let bookingItem of booking) {
+        $('.service-cart').append('<div class="col-md-12 added cls2643" style="margin-top:2px; padding-left:10px ;border-bottom: 1px solid #86a7cf;"><div class="col-md-11" style="display: flex;align-items: center; padding:0;"><div class="col-md-7 col-sm-7 col-xs-7 padding-0"><h4 style="color:rgba(19, 96, 142, 0.92);">'+ bookingItem.drive +'</h4></div><div class="col-md-5 col-sm-5 col-xs-5 text-right padding-0"><p>'+ bookingItem.price + " Rs" +'</p><p></p></div></div><div class="col-md-11" style="display: flex;align-items: center;padding:0;"><div class="col-md-6 col-sm-6 col-xs-6 padding-0"><p>'+ bookingItem.size +'</p><p></p></div><div class="col-md-6 col-sm-6 col-xs-6 text-right padding-0"><input type="text" id="dest" disabled=""></div></div></div></div>')
+        }
+    }
     slotBooked = ''
     console.log(booking)    
   }
 
   function slotSelect(e) {
     slotBooked = e.target.value
-    displayShoppingCart()
+    displayShoppingCart(bookingData)
   }
   
   function removeChild(id) {
@@ -1404,6 +5696,7 @@ var drives = [
     
     removeChild('one')
     removeChild('tbody')
+    removeChild('driveNotes')
 
     var drivesFound = false
 
@@ -1419,8 +5712,10 @@ var drives = [
         var ddd = String(driveDate.getDate()).padStart(2, '0');
         var dmm = String(driveDate.getMonth() + 1).padStart(2, '0');
       }
+
+      // && tdd <= ddd && tmm <= dmm
       
-      if(item[communityUserSelect] && tdd <= ddd && tmm <= dmm) {
+      if(item[communityUserSelect]) {
         
         drivesFound = true
         
@@ -1436,7 +5731,8 @@ var drives = [
   }
 
   function driveSelect(e) {
-
+    
+    
     removeChild('tbody')        
     title = e.target.title
 
@@ -1454,7 +5750,7 @@ var drives = [
 
     var date = 'date,' + dateDrive[1]
 
-    console.log(drive, date, e.target.id)
+    console.log(drive, date)
 
     if(dateDrive[0] === 'date') {
       var selectDrive = document.getElementById(drive)
@@ -1474,22 +5770,49 @@ var drives = [
 
     var communityUserSelect = document.getElementById('community').value  
 
-    if(communityUserSelect) {      
+    if(communityUserSelect) {
+                                  
       for(let item of drives) {                       
       if(item[communityUserSelect] && item[communityUserSelect].driveName === title) {
+
+        removeChild('driveNotes')
+
+        var slot = item[communityUserSelect].slot
+      
+        if(item[communityUserSelect].notes3) {
+          $('#driveNotes').append('<li>'+ item[communityUserSelect].notes1 +'</li><li>'+ item[communityUserSelect].notes3 +'</li><li>'+ item[communityUserSelect].notes2 +'</li>')
+        }
+        else {
+          $('#driveNotes').append('<li>'+ item[communityUserSelect].notes1 +'</li><li>'+ item[communityUserSelect].notes2 +'</li>')
+        }
 
         var notes = item[communityUserSelect].notes
 
         item[communityUserSelect].size.forEach(function (item) {          
-          Object.keys(item).forEach(function (key) {                       
-            $('tbody').append('<tr><td>' + key + '</td><td width="20%"><select onChange="slotSelect(event)" id="slot'+ communityUserSelect + title + key +'" name="slot"><option value="null">Select Slot</option><option value="8Am - 9-Am">8Am - 9-Am</option><option value="9Am - 10Am">9Am - 10Am</option><option value="10Am - 11Am">10Am - 11Am</option><option value="11Am - 12Pm">11Am - 12Pm</option><option value="12Pm - 1Pm">12Pm - 1Pm</option><option value="1Pm - 2Pm">1Pm - 2Pm</option><option value="2Pm - 3Pm">2Pm - 3Pm</option><option value="4Pm - 5Pm">4Pm - 5Pm</option><option value="6Pm - 7Pm">6Pm - 7Pm</option></select></td><td width = "28%"><div class="checkbox radio-margin"><label><input type="checkbox" id="booking'+ communityUserSelect + title + key +'" data-price_val="'+ item[key] +'" data-size_val="'+ key +'" data-community_val="'+ communityUserSelect +'" data-drive_val="'+ title +'" data-sid="2" data-ssid="64"data-category="0"onclick="displayShoppingCart(event)"></label></div></td><td width="12%">' + notes + '</td></tr >')
+          Object.keys(item).forEach(function (key, index) {            
+            // <td width="12%">' + item[key] + ' Rs' + '</td>                                              
+            $('tbody').append('<tr><td>' + key + '</td><td width="20%"><select class="'+ 'select' +'" onChange="slotSelect(event)" id="slot'+ communityUserSelect + title + key +'" name="slot"></select></td><td width = "28%"><div class="checkbox radio-margin"><label><input type="checkbox" id="booking'+ communityUserSelect + title + key +'" data-price_val="'+ item[key] +'" data-size_val="'+ key +'" data-community_val="'+ communityUserSelect +'" data-drive_val="'+ title +'" data-sid="2" data-ssid="64"data-category="0"onclick="displayShoppingCart(event)"></label></div></td></tr >')            
           });
         });
+
+                  var existOption = document.querySelector('.select')
+                  while (existOption.hasChildNodes()) {
+                    existOption.removeChild(existOption.firstChild);
+                  }
+
+                  $('.select').append('<option value='+ null +'>'+ 'Select Slot' +'</option>')                
+
+                  for(let slotItem of slot) {              
+                      $('.select').append('<option>'+ slotItem +'</option>')
+                    
+                  }
         
       }
     }
 
     }
+    // removeChild('notes')
+      
 
     selectedCheckbox()
 
@@ -1503,12 +5826,17 @@ var drives = [
   var totalPrice = 0
   var driveBooked = ''
   for(let item of booking) {
-    totalPrice += parseInt(item.price)
+    if(parseInt(item.price)) {
+      totalPrice += parseInt(item.price)
+    }
     driveBooked = driveBooked + ' ' + '{' + 'community: ' + item.community + ', ' + 'drive: ' + item.drive + ', ' + 'slot: ' + item.slot + ', ' + 'price: ' +  item.price + ' ' + '}'    
   }
-  $('#price').html('Your Total Booking Amount' + ' ' + totalPrice + ' ' + 'Rs')
-  $('#driveBookInfo').val(driveBooked)  
+  // $('#price').html('Your Total Booking Amount' + ' ' + totalPrice + ' ' + 'Rs')
+  // $('#driveBookInfo').val(driveBooked)  
   }
 </script>
 
 </html>
+                          
+                          
+                            
