@@ -787,7 +787,7 @@ a:active, a:hover {
         <div class="customize-tools">
           <h2 class="home-h2">Why subscribe for services drives?
             <div style="width: 75%; margin-left: 15%;">
-              <h3 style="margin-top: -0.3%;" class="text-muted text-center">Services drives concept is similar to "Group Buying" of quality services at significantly reduced prices for the limited period</h3>              
+              <h3 style="margin-top: 1%;" class="text-muted text-center">Services drives concept is similar to "Group Buying" of quality services at significantly reduced prices for the limited period</h3>              
             </div>
             <div style="margin-top: -1%;" class="section-header-underline"></div>
           </h2>          
@@ -950,12 +950,12 @@ a:active, a:hover {
         </div>
       </div> -->
 
-      <section class="gmc-pricing-section" id="driveSection">
-        <h3 class="heading text-center">Find Upcoming Events in your Community</h3>
-        <div class="container">
-          <div class="tab-box">
-            <div class="know_buttons row">              
-                <select id="community" onclick="selectCommunity(value)" class="dark-btn-lg animate bounce quote-btn w-50">
+      <section class="mr-auto text-center" id="driveSection">
+        <h3 class="heading text-center col-lg-6">Find Upcoming Events in your Community</h3>
+        <div class="col-lg-6">
+          <div class="">
+            <div class="">              
+                <select style="width: 50%;" id="community" onclick="selectCommunity(value)" class="dark-btn-lg animate bounce quote-btn w-50">
                   <option value='null'>Select your community</option>                      
                   <option value="AdarshPalmRetreat">Adarsh Palm Retreat</option>
                   <option value="BrigadeCosmopolis">Brigade Cosmopolis</option>
@@ -5662,6 +5662,10 @@ var drives = [
   var title = ''
   var slotSelectId = ''
 
+  var selectSlotBox = []
+
+  var driveSelectCount = 0
+
   var booking = []
 
   function selectedCheckbox() {
@@ -5696,6 +5700,15 @@ var drives = [
     var bookingData = e.target.attributes
     var validBookingData = true
     console.log(bookingData)
+
+            var selectSizeId = bookingData[3].nodeValue + bookingData[4].nodeValue + bookingData[2].nodeValue
+            selectSizeId = selectSizeId.replace(/[^a-zA-Z0-9]/g, '');    
+            selectSizeId = selectSizeId.split(/\s/).join('')
+            selectSizeId = "#sizeSlot" + selectSizeId
+            slotSelectId = selectSizeId
+            console.log("This is a slot select id-------------->", slotSelectId)
+
+
     var slotBooked = document.querySelector(slotSelectId).value                    
       if(booking.length > 0) {
 
@@ -5717,7 +5730,7 @@ var drives = [
 
         for(let bookingItem of booking) {
           if(bookingItem.community === bookingData[3].nodeValue && bookingItem.drive === bookingData[4].nodeValue) {            
-            document.getElementById("booking" + bookingData[3].nodeValue + bookingData[4].nodeValue + bookingData[2].nodeValue).checked = false;
+            document.getElementById("booking" + bookingData[3].nodeValue + bookingData[4].nodeValue + bookingData[2].nodeValue).checked = false;            
             document.querySelector(slotSelectId).setAttribute('class', 'd-none')
             alert('Please select only one item')
             validBookingData = false
@@ -5818,11 +5831,27 @@ var drives = [
       }
   }
 
-  function driveSizeSelect(e) {    
-
+  function driveSizeSelect(e) {  
+    
+    
     var bookingData = e.target.attributes
 
+
     console.log(bookingData)
+
+    if(slotSelectId) {
+      console.log("This is a slot select id-------------->", slotSelectId)
+      tempSlot = slotSelectId.split('#')
+      console.log(tempSlot[1])
+      console.log(document.getElementById(tempSlot[1]))
+      if(document.getElementById(tempSlot[1]) && document.getElementById(tempSlot[1]).value === 'null') {
+        alert('Please select Slot First')
+        document.getElementById("booking" + bookingData[4].nodeValue + bookingData[5].nodeValue + bookingData[3].nodeValue).checked = false;
+        $(selectSizeId).hide()        
+        return null
+      }
+    }
+    console.log('Here')
 
     var aLaCartFlag = false
     var validALaCart = false
@@ -5849,6 +5878,15 @@ var drives = [
         validALaCart = true
       }
     }
+
+    // if(selectSlotBox.length > 0 && !aLaCartFlag && validALaCart) {
+    //   // console.log(selectSlotBox[selectSlotBox.length - 2])
+    //   if(!document.getElementById(selectSlotBox[selectSlotBox.length - 2])) {
+    //     alert('Please select Slot or de select')
+    //     document.getElementById("booking" + bookingData[4].nodeValue + bookingData[5].nodeValue + bookingData[3].nodeValue).checked = false;
+    //     return
+    //   }
+    // }
     
     // console.log(validALaCart)
             
@@ -5861,7 +5899,37 @@ var drives = [
     selectSizeId = "#sizeSlot" + selectSizeId
     slotSelectId = selectSizeId
 
-    console.log(selectSizeId)
+    // console.log(selectSizeId)
+
+    // selectSlotBox.push(slotSelectId)
+    // selectSlotBox.pop()
+
+    // if(!document.getElementById(slotSelectId) && !aLaCartFlag) {
+    //   alert('Please select slot')
+    // }
+
+    // selectSlotBox.push(slotSelectId)
+    // console.log(selectSlotBox)
+
+    // var previousSlot = false
+
+    // if(selectSlotBox.length > 1) {
+    //   for(let bookingItem of booking) {
+    //     if(bookingItem.selectedDriveId === selectSlotBox[selectSlotBox.length - 1]) {
+    //       previousSlot = true
+    //       break
+    //     }
+    //   }
+    //   if(!previousSlot) {
+    //     alert('please select drive slot first')
+    //     selectSlotBox.pop()
+    //     console.log(selectSlotBox)
+    //     document.getElementById("booking" + bookingData[4].nodeValue + bookingData[5].nodeValue + bookingData[3].nodeValue).checked = false;
+    //     $(selectSizeId).hide()
+    //   }
+    // }
+
+    
 
 
     if(!aLaCartFlag) {
@@ -5874,6 +5942,7 @@ var drives = [
             }
           }
         }
+
 
         var bookingItemShow = false
         var deleteItem = false
@@ -5931,11 +6000,24 @@ var drives = [
         var k = 0
         for(let itemIndex of deleteIndex) {
         booking.splice(itemIndex - k, 1)
-        console.log(booking)
+        // console.log(booking)
         k = k + 1
       }
       }
-    console.log('This is a array of booking items', booking)
+    // console.log('This is a array of booking items', booking)
+
+    if(booking.length > 0 && aLaCartFlag && !validALaCart && !deleteItem) {
+        for(let bookingItem of booking) {
+          if(bookingItem.community === bookingData[4].nodeValue && bookingItem.drive === bookingData[5].nodeValue) {            
+            document.getElementById("booking" + bookingData[4].nodeValue + bookingData[5].nodeValue + bookingData[3].nodeValue).checked = false;
+            // document.querySelector(slotSelectId).setAttribute('class', 'd-none')
+            $(slotSelectId).hide()
+            alert('Please select only one item')
+            validBookingData = false
+            break
+          }
+        }        
+      }
 
     if(aLaCartFlag && validALaCart && !deleteItem) {
           $(selectSizeId).hide()
@@ -5953,6 +6035,16 @@ var drives = [
           $('#book-btn').hide()
         }
     }
+    
+console.log('This is a function count of drive select--------->', driveSelectCount)
+
+    // if(driveSelectCount > booking.length) {
+    //     alert('Please choose time slot first')
+    //     document.getElementById("booking" + bookingData[4].nodeValue + bookingData[5].nodeValue + bookingData[3].nodeValue).checked = false;
+    //     $(slotSelectId).hide()
+    //   }
+
+      driveSelectCount = driveSelectCount + 1
   }
 
   function driveSelect(e) {
@@ -6019,8 +6111,8 @@ var drives = [
             var optionSelectId =  communityUserSelect + title + key
             optionSelectId = optionSelectId.replace(/[^a-zA-Z0-9]/g, '');
             optionSelectId = optionSelectId.split(/\s/).join('')
-            console.log(optionSelectId)                                             
-            $('tbody').append('<tr><td>' + key + '</td><td style="text-decoration: line-through;">' + item[key].marketPrice + " Rs" + '</td><td>' + item[key].dusminutePrice + " Rs" + '</td><td width = "25%"><div class="checkbox radio-margin"><label><input type="checkbox" id="booking'+ communityUserSelect + title + key +'" data-price_val="'+ item[key].dusminutePrice +'" data-size_val="'+ key +'" data-community_val="'+ communityUserSelect +'" data-drive_val="'+ title +'" data-sid="2" data-ssid="64"data-category="0"onclick="driveSizeSelect(event)"></label></div></td><td width="13%"><select " data-price_val="'+ item[key].dusminutePrice +'" data-size_val="'+ key +'" data-community_val="'+ communityUserSelect +'" data-drive_val="'+ title +'" class="d-none" id="sizeSlot'+ optionSelectId +'" onchange="displayShoppingCart(event)" style="width: 80px"><option>Please Select Slot</option></select></td></tr >')            
+            // console.log(optionSelectId)                                             
+            $('tbody').append('<tr><td>' + key + '</td><td style="text-decoration: line-through;">' + item[key].marketPrice + " Rs" + '</td><td>' + item[key].dusminutePrice + " Rs" + '</td><td width = "25%"><div class="checkbox radio-margin"><label><input type="checkbox" id="booking'+ communityUserSelect + title + key +'" data-price_val="'+ item[key].dusminutePrice +'" data-size_val="'+ key +'" data-community_val="'+ communityUserSelect +'" data-drive_val="'+ title +'" data-sid="2" data-ssid="64"data-category="0"onclick="driveSizeSelect(event)"></label></div></td><td width="13%"><select " data-price_val="'+ item[key].dusminutePrice +'" data-size_val="'+ key +'" data-community_val="'+ communityUserSelect +'" data-drive_val="'+ title +'" class="d-none" id="sizeSlot'+ optionSelectId +'" onchange="displayShoppingCart(event)" style="width: 80px"><option value=null>Please Select Slot</option></select></td></tr >')            
           });
         });        
         
