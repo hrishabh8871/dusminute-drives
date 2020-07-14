@@ -5662,9 +5662,13 @@ var drives = [
   var title = ''
   var slotSelectId = ''
 
-  var selectSlotBox = []
+  var driveSelectId = ''
 
-  var driveSelectCount = 0
+  var driveSelectCount = 1
+
+  var driveSelectBooking = ''
+
+  var unCheckedFlag = false
 
   var booking = []
 
@@ -5831,7 +5835,30 @@ var drives = [
       }
   }
 
-  function driveSizeSelect(e) {  
+  function driveSizeSelect(e) {
+    
+    
+    if(driveSelectId) {
+      console.log("This is a unchecked flag------------->", document.getElementById(driveSelectBooking).checked)
+
+      if(!document.getElementById(driveSelectBooking).checked) {
+        console.log('Here')
+        unCheckedFlag = true
+        // console.log(driveSelectId)
+        if(driveSelectCount === 1) {
+          $('#' + driveSelectId[1]).hide()
+        }
+        else {
+          $(slotSelectId).hide()
+        }
+        // console.log(document.getElementById(driveSelectId[1]).value)
+        // document.getElementById(driveSelectId[1]).value = 'bookingSlot'
+        // console.log(document.getElementById(driveSelectId[1]).value)
+      }
+      
+        
+      
+    }
     
     
     var bookingData = e.target.attributes
@@ -5839,19 +5866,19 @@ var drives = [
 
     console.log(bookingData)
 
-    if(slotSelectId) {
-      console.log("This is a slot select id-------------->", slotSelectId)
-      tempSlot = slotSelectId.split('#')
-      console.log(tempSlot[1])
-      console.log(document.getElementById(tempSlot[1]))
-      if(document.getElementById(tempSlot[1]) && document.getElementById(tempSlot[1]).value === 'null') {
-        alert('Please select Slot First')
-        document.getElementById("booking" + bookingData[4].nodeValue + bookingData[5].nodeValue + bookingData[3].nodeValue).checked = false;
-        $(selectSizeId).hide()        
-        return null
-      }
-    }
-    console.log('Here')
+    // if(slotSelectId) {
+    //   console.log("This is a slot select id-------------->", slotSelectId)
+    //   tempSlot = slotSelectId.split('#')
+    //   console.log(tempSlot[1])
+    //   console.log(document.getElementById(tempSlot[1]))
+    //   if(document.getElementById(tempSlot[1]) && document.getElementById(tempSlot[1]).value === 'null') {
+    //     alert('Please select Slot First')
+    //     document.getElementById("booking" + bookingData[4].nodeValue + bookingData[5].nodeValue + bookingData[3].nodeValue).checked = false;
+    //     $(selectSizeId).hide()        
+    //     return null
+    //   }
+    // } 
+    // console.log('Here')
 
     var aLaCartFlag = false
     var validALaCart = false
@@ -5937,7 +5964,7 @@ var drives = [
             if(aLaCartItem[bookingData[3].nodeValue] && aLaCartItem[bookingData[3].nodeValue].aLaCart) {
               alert('Please choose main services then select')
               document.getElementById("booking" + bookingData[4].nodeValue + bookingData[5].nodeValue + bookingData[3].nodeValue).checked = false;              
-              // document.querySelector('#sizeSlotAdarshPalmRetreatPestControlDisinfectionSanitization').setAttribute('class', 'd-none')
+              // document.querySelector('#sizeSlotAdarshPalmRetreatPestControlDisinfectionSanitization').setAttribute('class', 'd-none')              
               $(selectSizeId).hide()                            
             }
           }
@@ -6006,6 +6033,21 @@ var drives = [
       }
     // console.log('This is a array of booking items', booking)
 
+    if(driveSelectCount === 1) {
+      driveSelectId = slotSelectId.split('#')
+      driveSelectBooking = "booking" + bookingData[4].nodeValue + bookingData[5].nodeValue + bookingData[3].nodeValue
+    }
+
+    // console.log(driveSelectId[1], document.getElementById(driveSelectId[1]), document.getElementById(driveSelectId[1]) !== 'null')
+
+    if(!unCheckedFlag && !deleteItem && !aLaCartFlag && driveSelectCount > 1 && driveSelectId[1] && document.getElementById(driveSelectId[1]) !== 'null') {
+        alert('Please select slot first')
+        document.getElementById("booking" + bookingData[4].nodeValue + bookingData[5].nodeValue + bookingData[3].nodeValue).checked = false;
+        $(selectSizeId).hide()
+      }
+
+    driveSelectCount = driveSelectCount + 1
+
     if(booking.length > 0 && aLaCartFlag && !validALaCart && !deleteItem) {
         for(let bookingItem of booking) {
           if(bookingItem.community === bookingData[4].nodeValue && bookingItem.drive === bookingData[5].nodeValue) {            
@@ -6048,6 +6090,17 @@ console.log('This is a function count of drive select--------->', driveSelectCou
   }
 
   function driveSelect(e) {
+
+    if(!unCheckedFlag && driveSelectId) {
+      if(document.getElementById(driveSelectId[1]) && document.getElementById(driveSelectId[1]).value === 'null') {
+      alert('Your can not switch tab please select slot')
+      // driveSelectCount = 1
+      return
+    }
+    }
+
+    driveSelectCount = 1
+    driveSelectId = ''
     
     
     removeChild('tbody')        
