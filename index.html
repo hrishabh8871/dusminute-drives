@@ -5836,29 +5836,29 @@ var drives = [
   }
 
   function driveSizeSelect(e) {
-    
+    unCheckedFlag = false
     
     if(driveSelectId) {
       console.log("This is a unchecked flag------------->", document.getElementById(driveSelectBooking).checked)
 
       if(!document.getElementById(driveSelectBooking).checked) {
-        console.log('Here')
-        unCheckedFlag = true
-        // console.log(driveSelectId)
-        if(driveSelectCount === 1) {
-          $('#' + driveSelectId[1]).hide()
-        }
-        else {
-          $(slotSelectId).hide()
-        }
-        // console.log(document.getElementById(driveSelectId[1]).value)
-        // document.getElementById(driveSelectId[1]).value = 'bookingSlot'
-        // console.log(document.getElementById(driveSelectId[1]).value)
+        console.log('Here')        
+        unCheckedFlag = true        
+        $('#' + driveSelectId[1]).hide()
+        driveSelectId = ''
+        driveSelectCount = 1
+        return                      
       }
-      
-        
-      
+
+      // if(document.getElementById(driveSelectId[1]).value && document.getElementById(driveSelectId[1]).value !== 'null')  {
+      //   driveSelectId = ''
+      //   unCheckedFlag = false
+      //   driveSelectCount = 1
+      // }
+           
     }
+
+    // unCheckedFlag = false
     
     
     var bookingData = e.target.attributes
@@ -5965,7 +5965,8 @@ var drives = [
               alert('Please choose main services then select')
               document.getElementById("booking" + bookingData[4].nodeValue + bookingData[5].nodeValue + bookingData[3].nodeValue).checked = false;              
               // document.querySelector('#sizeSlotAdarshPalmRetreatPestControlDisinfectionSanitization').setAttribute('class', 'd-none')              
-              $(selectSizeId).hide()                            
+              $(slotSelectId).hide()
+              return                            
             }
           }
         }
@@ -5989,7 +5990,10 @@ var drives = [
       $(selectSizeId).append('<option>'+ slotItem +'</option>')                    
     }
 
-    document.querySelector(selectSizeId).setAttribute('class', 'd-block')
+    console.log(selectSizeId)
+
+    // document.querySelector(selectSizeId).setAttribute('class', 'd-block')
+    $(selectSizeId).show()
 
     if(booking.length > 0) {      
       var i = 0      
@@ -6020,8 +6024,6 @@ var drives = [
         j = j + 1
       }
       }
-
-      console.log('This is a delete index-------->', deleteIndex)
       
       if(deleteIndex.length > 0) {
         var k = 0
@@ -6067,6 +6069,18 @@ var drives = [
           bookingItemShow = true 
         }
 
+        if(booking.length > 0) {
+          $('#book-btn').show()
+        }
+
+        if(deleteItem) {
+        unCheckedFlag = true
+        driveSelectId = ''
+        driveSelectCount = 1
+        $(selectSizeId).hide()
+        bookingItemShow = true
+      }
+
     if(bookingItemShow) {
       removeChild('serviceCartItem')
       document.querySelector(slotSelectId).setAttribute('class', 'd-none')
@@ -6077,8 +6091,6 @@ var drives = [
           $('#book-btn').hide()
         }
     }
-    
-console.log('This is a function count of drive select--------->', driveSelectCount)
 
     // if(driveSelectCount > booking.length) {
     //     alert('Please choose time slot first')
@@ -6086,7 +6098,9 @@ console.log('This is a function count of drive select--------->', driveSelectCou
     //     $(slotSelectId).hide()
     //   }
 
-      driveSelectCount = driveSelectCount + 1
+      if(!unCheckedFlag) {
+        driveSelectCount = driveSelectCount + 1
+      }
   }
 
   function driveSelect(e) {
@@ -6101,6 +6115,7 @@ console.log('This is a function count of drive select--------->', driveSelectCou
 
     driveSelectCount = 1
     driveSelectId = ''
+    unCheckedFlag = false
     
     
     removeChild('tbody')        
