@@ -5837,6 +5837,46 @@ var drives = [
 
   function driveSizeSelect(e) {
     unCheckedFlag = false
+
+    var bookingData = e.target.attributes
+
+    var selectBookingId = 'booking' + bookingData[4].nodeValue + bookingData[5].nodeValue + bookingData[3].nodeValue
+
+    if(driveSelectId && driveSelectBooking === selectBookingId && document.getElementById(driveSelectId[1]) && document.getElementById(driveSelectId[1]).value !== 'null') {
+      if(booking.length > 0) {      
+      var i = 0      
+      for(let bookingItem of booking) {
+        if(bookingItem.selectedDriveId === ('#' + driveSelectId[1])) {
+          if(!bookingItem.aLaCart) {
+            // mainDriveFlag = true
+          }
+          console.log('This is a delete item------------------>', bookingItem)
+          alert('Your item has been Deleted')
+          booking.splice(i, 1)
+          // bookingItemShow = true
+          // deleteItem = true
+          break          
+        }
+        i = i + 1
+      }           
+    }
+
+    removeChild('serviceCartItem')
+      document.querySelector(slotSelectId).setAttribute('class', 'd-none')
+      for(let bookingItem of booking) {
+        $('.service-cart').append('<div class="col-md-12 added cls2643" style="margin-top:2px; padding-left:10px ;border-bottom: 1px solid #86a7cf;"><div class="col-md-11" style="display: flex;align-items: center; padding:0;"><div class="col-md-7 col-sm-7 col-xs-7 padding-0"><h4 style="color:rgba(19, 96, 142, 0.92);">'+ bookingItem.drive +'</h4></div><div class="col-md-5 col-sm-5 col-xs-5 text-right padding-0"><p>'+ bookingItem.price + " Rs" +'</p><p></p></div></div><div class="col-md-11" style="display: flex;align-items: center;padding:0;"><div class="col-md-6 col-sm-6 col-xs-6 padding-0"><p>'+ bookingItem.size +'</p><p></p></div><div class="col-md-6 col-sm-6 col-xs-6 text-right padding-0"><input type="text" id="dest" disabled="">'+ bookingItem.slot +'</div></div></div></div>')
+        }
+        if(booking.length === 0) {
+          $('#book-btn').hide()
+        }
+
+        $('#' + driveSelectId[1]).hide()
+      driveSelectId = ''
+      driveSelectCount = 1
+      driveSelectBooking = ''
+      unCheckedFlag = false
+      return
+    }
     
     if(driveSelectId) {
       console.log("This is a unchecked flag------------->", document.getElementById(driveSelectBooking).checked)
@@ -5861,7 +5901,7 @@ var drives = [
     // unCheckedFlag = false
     
     
-    var bookingData = e.target.attributes
+    
 
 
     console.log(bookingData)
